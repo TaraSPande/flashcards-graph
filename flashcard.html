@@ -6,7 +6,8 @@
     body { font-family: Arial, sans-serif; padding: 2rem; }
     #card-container { text-align: center; margin-bottom: 2rem; }
     #card { border: 1px solid #ccc; padding: 2rem; width: 50%; margin: auto; }
-    #answer { margin-top: 1rem; color: #555; }
+    #question { font-weight: bold; }
+    #answer { margin-top: 1rem; color: #555; text-align: left; }
     .buttons, .result-columns { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
     .result-column { border: 1px solid #ccc; padding: 1rem; width: 40%; min-height: 100px; }
     .result-column h3 { text-align: center; }
@@ -30,8 +31,10 @@
   </div>
 
   <div id="card-container">
-    <div id="card">Loading...</div>
-    <div id="answer"></div>
+    <div id="card">
+      <div id="question">Loading...</div>
+      <div id="answer"></div>
+    </div>
     <div class="buttons">
       <button onclick="showAnswer()">Show Answer</button>
       <button onclick="markCorrect()">Correct</button>
@@ -72,14 +75,14 @@
         return;
       }
       const card = filteredCards[currentIndex];
-      cardDiv.textContent = `${card.id}. ${card.question}`;
-      answerDiv.textContent = "";
+      document.getElementById("question").textContent = `${card.id}. ${card.question}`;
+      document.getElementById("answer").textContent = "";
       updateProgress();
     }
 
     function showAnswer() {
       const card = filteredCards[currentIndex];
-      answerDiv.textContent = card.answer;
+      document.getElementById("answer").textContent = card.answer;
     }
 
     function nextCard() {
