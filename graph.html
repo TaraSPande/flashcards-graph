@@ -23,7 +23,9 @@
       box-sizing: border-box;
     }
 
-    .node { cursor: pointer; }
+    .node { cursor: pointer; stroke-width: 2px; }
+    .node.highlighted { stroke: #000; stroke-width: 3px; }
+
     .label { pointer-events: none; font-size: 14px; }
 
     button {
@@ -65,21 +67,25 @@
 
     svg.call(zoom);
 
-    let zoomTransform = d3.zoomIdentity; // Store zoom state
-
     function resetView() {
       svg.transition()
         .duration(500)
         .call(zoom.transform, d3.zoomIdentity);
     }
 
+    let selectedNode = null;
+
     fetch('flashcards.json')
       .then(response => response.json())
       .then(flashcards => {
+        // If you want to color-code by subtopic later
+        const color = d3.scaleOrdinal(d3.schemeCategory10);
+
         const nodes = flashcards.map(card => ({
           id: card.id,
           question: card.question,
-          answer: card.answer
+          answer: card.answer,
+          subtopic: card.subtopic || "default"  // Optional: future color use
         }));
 
         const links = flashcards.flatMap(card =>
@@ -102,15 +108,11 @@
           .data(nodes)
           .join("circle")
           .attr("r", 20)
-          .attr("fill", "#69b3a2")
+          .attr("fill", d => color(d.subtopic))
           .attr("class", "node")
           .on("click", (_, d) => {
-            document.getElementById("qa-display").innerHTML = `
-              <h3>Question</h3>
-              <p>${d.question}</p>
-              <h3>Answer</h3>
-              <p>${d.answer}</p>
-            `;
+            d3.event?.stopPropagation(); // prevent background click from firing
+            selectNode(d, d3.select(d3.event.currentTarget));
           });
 
         const label = container.append("g")
@@ -119,6 +121,36 @@
           .join("text")
           .text(d => d.question)
           .attr("class", "label");
+
+        function selectNode(d, nodeSelection) {
+          // Remove highlight from previous node
+          container.selectAll(".node").classed("highlighted", false);
+
+          // Highlight current node
+          nodeSelection.classed("highlighted", true);
+          selectedNode = d;
+
+          // Update the right panel
+          document.getElementById("qa-display").innerHTML = `
+            <h3>Question (ID: ${d.id})</h3>
+            <p>${d.question}</p>
+            <h3>Answer</h3>
+            <p>${d.answer}</p>
+          `;
+        }
+
+        function clearSelection() {
+          container.selectAll(".node").classed("highlighted", false);
+          selectedNode = null;
+          document.getElementById("qa-display").innerHTML = `
+            <p>Click on a node to see its question and answer.</p>
+          `;
+        }
+
+        svg.on("click", () => {
+          // Only clear selection if clicked outside a node
+          clearSelection();
+        });
 
         simulation.on("tick", () => {
           link
