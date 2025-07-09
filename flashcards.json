@@ -1,79 +1,352 @@
 [
   {
     "id": "1",
-    "question": "PK",
-    "answer": "what the body does to the drug",
-    "links": ["3", "4", "5", "6", "7", "8", "9"],
+    "question": "EC50",
+    "answer": "Efficacy-Concentration 50: drug concentration that produces 50% of its maximum effect.",
+    "links": ["10", "14", "16"],
     "subtopic": "Pharmacology"
   },
   {
     "id": "2",
-    "question": "PD",
-    "answer": "what the drug does to the body",
-    "links": ["10", "11"],
+    "question": "Clearance",
+    "answer": "Drug elimination efficiency.",
+    "links": ["13"],
     "subtopic": "Pharmacology"
   },
   {
     "id": "3",
-    "question": "ADME",
-    "answer": "absorption, distribution, metabolism, elimination",
-    "links": ["1"],
+    "question": "Volume of Distribution (Vd)",
+    "answer": "Total amount of drug in the body divided by the concentration in the bloodstream. High Vd suggests the drug is distributed widely throughout the body. Lower Vd indicates the drug is mostly confined to the blood plasma.",
+    "links": ["13"],
     "subtopic": "Pharmacology"
   },
   {
     "id": "4",
-    "question": "Cmax",
-    "answer": "concentration max",
-    "links": ["1"],
-    "subtopic": "Pharmacology"
+    "question": "Common Development Endpoints",
+    "answer": "[1] Overall survival of patients (traditional endpoint). [2] Progression free survival — time patient lives with disease without it worsening. [3] Durable complete response — complete disappearance of all cancer. [4] Palliation — reduction in tumor symptoms.",
+    "links": ["8"],
+    "subtopic": "Drug Development"
   },
   {
     "id": "5",
-    "question": "Tmax",
-    "answer": "time max",
-    "links": ["1"],
+    "question": "LD50",
+    "answer": "Lethal Dose 50: dosage of the drug where 50% do not survive.",
+    "links": ["16"],
     "subtopic": "Pharmacology"
   },
   {
     "id": "6",
-    "question": "AUC",
-    "answer": "Area Under the Curve\nMeasures the area under the ROC curve. A higher AUC value indicates better model performance as it suggests a greater ability to distinguish between classes. An AUC value of 1.0 indicates perfect performance while 0.5 suggests it is random guessing.",
-    "links": ["1"],
-    "subtopic": "Statistics"
+    "question": "CFR",
+    "answer": "Code of Federal Regulations. All FDA guidelines and policies are codified in CFR Title 21.",
+    "links": ["8", "17", "31"],
+    "subtopic": "Drug Development"
   },
   {
     "id": "7",
-    "question": "Clearance",
-    "answer": "drug elimination efficiency",
-    "links": ["1"],
+    "question": "DDI Studies",
+    "answer": "Drug-drug Interaction Studies: what happens taking other drugs w/ this new drug? Context: Post-Marketing Studies.",
+    "links": ["29"],
     "subtopic": "Pharmacology"
   },
   {
     "id": "8",
-    "question": "Volume of Distribution",
-    "answer": "total amount of drug in the body divided by the concentration in the bloodstream\nhigh Vd suggests the drug is distributed widely throughout the body\nlower Vd indicates the drug is mostly confined to the blood plasma",
-    "links": ["1"],
-    "subtopic": "Pharmacology"
+    "question": "Drug Development Stages",
+    "answer": "[1] Preclinical (IND). [2] Phase 1 (toxicity). [3] Phase 2 (efficacy). [4] Phase 3 (endpoints). [5] FDA Approval (NDA). [6] Post-Marketing Studies (EHR).",
+    "links": ["4", "6", "16", "17"],
+    "subtopic": "Drug Development"
   },
   {
     "id": "9",
-    "question": "Half Life",
-    "answer": "the time it takes for the drug concentration to decrease to half of its initial amount in the body",
-    "links": ["1"],
+    "question": "ADME",
+    "answer": "Absorption, Distribution, Metabolism, Excretion.",
+    "links": ["11", "13"],
     "subtopic": "Pharmacology"
   },
   {
     "id": "10",
-    "question": "EC50",
-    "answer": "Efficacy-Concentration 50\ndrug concentration that produces 50% of its maximum effect",
-    "links": ["2"],
+    "question": "Potency",
+    "answer": "Higher affinity to target.",
+    "links": ["1", "14"],
     "subtopic": "Pharmacology"
   },
   {
     "id": "11",
-    "question": "Potency",
-    "answer": "Higher affinity to target",
-    "links": ["2"],
+    "question": "Preferred Administration Methods",
+    "answer": "Primary: Oral. Secondary: IV.",
+    "links": ["9"],
+    "subtopic": "Drug Development"
+  },
+  {
+    "id": "12",
+    "question": "Therapeutic Window",
+    "answer": "On a concentration vs time graph, therapeutic window is the concentration between efficacy (low end) and toxicity (high end). Small therapeutic windows require more careful dosing.",
+    "links": ["14"],
     "subtopic": "Pharmacology"
+  },
+  {
+    "id": "13",
+    "question": "PK",
+    "answer": "Pharmacokinetics: what the body does to the drug.",
+    "links": ["2", "3", "9", "15", "18", "20", "32"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "14",
+    "question": "PD",
+    "answer": "Pharmacodynamics: what the drug does to the body.",
+    "links": ["1", "10", "12", "19"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "15",
+    "question": "Cmax",
+    "answer": "Maximum concentration.",
+    "links": ["13"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "16",
+    "question": "IND",
+    "answer": "Investigational New Drug. Required to begin clinical trials. Submitted after pre-clinical phase.",
+    "links": ["1", "5", "8"],
+    "subtopic": "Drug Development"
+  },
+  {
+    "id": "17",
+    "question": "NDA",
+    "answer": "New Drug Application. Required for FDA approval. Submitted after Phase III.",
+    "links": ["6", "8"],
+    "subtopic": "Drug Development"
+  },
+  {
+    "id": "18",
+    "question": "Tmax",
+    "answer": "Maximum time.",
+    "links": ["13"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "19",
+    "question": "Emax",
+    "answer": "Maximum Efficacy. Example forms of measurement: reduction in tumor size %",
+    "links": ["14"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "20",
+    "question": "Half Life",
+    "answer": "The time it takes for the drug concentration to decrease to half of its initial amount in the body.",
+    "links": ["13"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "21",
+    "question": "VM",
+    "answer": "Virtual Machine: a technology that can be used to create isolated computing environments, which can be beneficial for some HPC tasks.",
+    "links": ["27"],
+    "subtopic": "Computing"
+  },
+  {
+    "id": "22",
+    "question": "HPC",
+    "answer": "High Performance Computing: focused on achieving high performance through parallel processing, often using specialized in-house hardware and infrastructure.",
+    "links": ["26", "27"],
+    "subtopic": "Computing"
+  },
+  {
+    "id": "23",
+    "question": "Cloud Computing",
+    "answer": "The practice of using a network of remote servers hosted on the internet to store, manage, and process data, rather than a local server or a personal computer.",
+    "links": ["26", "27"],
+    "subtopic": "Computing"
+  },
+  {
+    "id": "24",
+    "question": "PHI",
+    "answer": "Protected Health Information: inherently identifiable information that requires an IRB",
+    "links": ["27", "29", "31"],
+    "subtopic": "Data"
+  },
+  {
+    "id": "25",
+    "question": "DeID OMOP",
+    "answer": "Observational Medical Outcomes Partnership: global, open-source community data standard, designed to standardize the structure and content of observational data and to enable efficient analyses that can produce reliable evidence.",
+    "links": ["27", "30"],
+    "subtopic": "Data"
+  },
+  {
+    "id": "26",
+    "question": "AWS",
+    "answer": "Amazon Web Services: cloud-based HPC platform (cloud computing).",
+    "links": ["22", "23", "27"],
+    "subtopic": "Computing"
+  },
+  {
+    "id": "27",
+    "question": "IC",
+    "answer": "Information Commons: a physical or virtual space designed to provide integrated access to information resources, technology, and support services, often within an academic library or educational setting. Includes: data, computation, tools, and community.",
+    "links": ["21", "22", "23", "24", "25", "26", "28", "29", "30"],
+    "subtopic": "Computing"
+  },
+  {
+    "id": "28",
+    "question": "Clinical Concepts",
+    "answer": "Extraction of all concepts in clinical notes into structured “clinical concepts”. Example extractions: dosage, ontologies, etc.",
+    "links": ["27", "29"],
+    "subtopic": "Data"
+  },
+  {
+    "id": "29",
+    "question": "EHR",
+    "answer": "Electronic Health Records.",
+    "links": ["7", "24", "27", "28", "30"],
+    "subtopic": "Data"
+  },
+  {
+    "id": "30",
+    "question": "DeID",
+    "answer": "De-identified Information: names, images, birthdays, etc are all altered or removed for anonymity. UCSF Philter (”Filter”) removes identifiable info from clinical notes. There is a service that can pair de-identified and identified tags (if you end up needing identified data later on).",
+    "links": ["25", "27", "29"],
+    "subtopic": "Data"
+  },
+  {
+    "id": "31",
+    "question": "IRB",
+    "answer": "Institutional Review Board: a committee that reviews and approves research involving human subjects to ensure ethical and safe practices.",
+    "links": ["6", "24"],
+    "subtopic": "Data"
+  },
+  {
+    "id": "32",
+    "question": "AUC",
+    "answer": "Area Under the Curve: measures the area under the ROC curve. A higher AUC value indicates better model performance as it suggests a greater ability to distinguish between classes. An AUC value of 1.0 indicates perfect performance while 0.5 suggests it is random guessing.",
+    "links": ["13", "33"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "33",
+    "question": "ROC Curve",
+    "answer": "Used to evaluate the performance of a binary classifier by plotting TPR (y) vs. FPR (x) at different classification thresholds (ex. return True if >0.9 vs just >0.5). As we continually lower the threshold, TPR will increase closer to 100% (because FN is decreasing), but FPR will also increases (TN will decrease)! The model is classifying well if TPR is high and FPR is low, particularly for those higher thresholds like >0.9 (farther left points on graph). Example: If we have high FPR at >0.9, then the model is super confident that a negative should be positive -> which is bad. It represents the trade-off between the sensitivity and specificity of a classifier. REMEMBER: TPR and FPR are separate and not dependent on each other!!! (both can and do increase at the same time depending on the threshold). TPR = how many positives guess correctly at X threshold? FPR = how many negatives guessed wrong at X threshold? (X = >0.8 for example).",
+    "links": ["32", "34", "35", "36", "37"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "34",
+    "question": "TPR",
+    "answer": "True Positive Rate: of all actual positives, how many caught? Also known as Sensitivity or Recall.",
+    "links": ["33", "36", "38"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "35",
+    "question": "FPR",
+    "answer": "False Positive Rate: of all actual negatives, how many missed? FPR = FP / (FP + TN)",
+    "links": ["33"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "36",
+    "question": "Sensitivity",
+    "answer": "Of all actual positives, how many caught? Also known as TPR or Recall.",
+    "links": ["33", "34", "38"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "37",
+    "question": "Specificity",
+    "answer": "Of all actual negatives, how many caught? Goal: avoid false positives (like precision, but different strategy). Calculated as 1 - FPR = TN / (TN + FP).",
+    "links": ["33"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "38",
+    "question": "Recall",
+    "answer": "Of all actual positives, how many caught? Goal: Don’t miss any true cases. High recall = few false negatives. Formula: TP / [TP + FN].",
+    "links": ["34", "36", "40"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "39",
+    "question": "Precision",
+    "answer": "Of all positive reports, how many correct? Goal: Don’t make false claims. High precision = few false positives. Formula: TP / [TP + FP].",
+    "links": ["40"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "40",
+    "question": "Supervised Learning",
+    "answer": "Utilizes labeled data. Give the model a starting point and end point (labeled data) and the algorithm infers the rules.",
+    "links": ["38", "39", "42", "44", "45", "46", "47"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "41",
+    "question": "Unsupervised Learning",
+    "answer": "Utilizes unlabeled data. Without labels, model finds hidden patterns on its own. During evaluation, you need to have a strong understanding of what you are looking for (since there is no labeled data).",
+    "links": ["42", "43"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "42",
+    "question": "Semi-supervised Learning",
+    "answer": "Learning from limited labels. Leverage unlabeled data to improve models trained on limited labeled data.",
+    "links": ["40", "41"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "43",
+    "question": "Dimensionality Reduction",
+    "answer": "Goal: reduce number of input variables while preserving as much meaningful structure or variance as possible in order to: [1] simplify model, [2] improve performance, [3]reduce overfitting.",
+    "links": ["41", "44", "48", "49", "50"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "44",
+    "question": "Feature Importance",
+    "answer": "Transform raw data into meaningful “features” - numerical representations (vectorization).",
+    "links": ["40", "43"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "45",
+    "question": "Accuracy",
+    "answer": "TP / [ALL]",
+    "links": ["40"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "46",
+    "question": "Regression",
+    "answer": "Predict continuous numerical value.",
+    "links": ["40"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "47",
+    "question": "Classification",
+    "answer": "Predict a category or class.",
+    "links": ["40"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "48",
+    "question": "PCA",
+    "answer": "Dimensionality Reduction Technique: linear, fast, interpretable.",
+    "links": ["43"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "49",
+    "question": "UMAP",
+    "answer": "Dimensionality Reduction Technique: nonlinear, preserves local and global structure. Great for visualization.",
+    "links": ["43"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "50",
+    "question": "t-SNE",
+    "answer": "Dimensionality Reduction Technique: good for visualizing 2D/3D high-dimensional data.",
+    "links": ["43"],
+    "subtopic": "Statistics"
   }
 ]
