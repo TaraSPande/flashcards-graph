@@ -101,9 +101,7 @@
 
     function setInteractionEnabled(enabled) {
       document.querySelectorAll(".buttons button").forEach(btn => {
-        if (btn.textContent !== "Show Answer") {
-          btn.disabled = !enabled;
-        }
+        btn.disabled = !enabled;
       });
     }
 
