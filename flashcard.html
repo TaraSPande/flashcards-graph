@@ -3,39 +3,148 @@
 <head>
   <title>Flashcard Mode</title>
   <style>
-    #card { border: 1px solid #ccc; padding: 2rem; text-align: center; width: 50%; margin: auto; }
-    button { margin-top: 1rem; }
+    body { font-family: Arial, sans-serif; padding: 2rem; }
+    #card-container { text-align: center; margin-bottom: 2rem; }
+    #card { border: 1px solid #ccc; padding: 2rem; width: 50%; margin: auto; }
+    #answer { margin-top: 1rem; color: #555; }
+    .buttons, .result-columns { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+    .result-column { border: 1px solid #ccc; padding: 1rem; width: 40%; min-height: 100px; }
+    .result-column h3 { text-align: center; }
+    #top-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+    #progress { font-weight: bold; }
+    #controls { display: flex; justify-content: center; gap: 1rem; margin-bottom: 1rem; }
+    select, button { padding: 0.5rem 1rem; }
   </style>
 </head>
 <body>
-  <div id="card">Loading...</div>
-  <button onclick="showAnswer()">Show Answer</button>
-  <button onclick="nextCard()">Next Card</button>
+  <div id="top-bar">
+    <button onclick="window.location.href='index.html'">Back to Home</button>
+    <div id="progress">0 of 0</div>
+  </div>
+
+  <div id="controls">
+    <select id="subtopicFilter" onchange="applyFilter()">
+      <option value="All">All Subtopics</option>
+    </select>
+    <button onclick="toggleShuffle()">Toggle Shuffle</button>
+  </div>
+
+  <div id="card-container">
+    <div id="card">Loading...</div>
+    <div id="answer"></div>
+    <div class="buttons">
+      <button onclick="showAnswer()">Show Answer</button>
+      <button onclick="markCorrect()">Correct</button>
+      <button onclick="markIncorrect()">Incorrect</button>
+      <button onclick="nextCard()">Next Card</button>
+    </div>
+  </div>
+
+  <div class="result-columns">
+    <div class="result-column">
+      <h3>Correct</h3>
+      <ul id="correctList"></ul>
+    </div>
+    <div class="result-column">
+      <h3>Incorrect</h3>
+      <ul id="incorrectList"></ul>
+    </div>
+  </div>
 
   <script>
-  let currentIndex = 0;
-  let shuffled = [];
-  const cardDiv = document.getElementById("card");
+    let allCards = [];
+    let filteredCards = [];
+    let currentIndex = 0;
+    let shuffleEnabled = true;
 
-  function showCard() {
-    cardDiv.textContent = shuffled[currentIndex].question;
-  }
+    const cardDiv = document.getElementById("card");
+    const answerDiv = document.getElementById("answer");
+    const progressDiv = document.getElementById("progress");
+    const correctList = document.getElementById("correctList");
+    const incorrectList = document.getElementById("incorrectList");
+    const subtopicFilter = document.getElementById("subtopicFilter");
 
-  function showAnswer() {
-    cardDiv.textContent = shuffled[currentIndex].answer;
-  }
+    function showCard() {
+      if (filteredCards.length === 0) {
+        cardDiv.textContent = "No cards available.";
+        answerDiv.textContent = "";
+        progressDiv.textContent = "0 of 0";
+        return;
+      }
+      const card = filteredCards[currentIndex];
+      cardDiv.textContent = `${card.id}. ${card.question}`;
+      answerDiv.textContent = "";
+      updateProgress();
+    }
 
-  function nextCard() {
-    currentIndex = (currentIndex + 1) % shuffled.length;
-    showCard();
-  }
+    function showAnswer() {
+      const card = filteredCards[currentIndex];
+      answerDiv.textContent = card.answer;
+    }
 
-  fetch('flashcards.json')
-    .then(response => response.json())
-    .then(data => {
-      shuffled = data.sort(() => 0.5 - Math.random());
+    function nextCard() {
+      if (filteredCards.length === 0) return;
+      currentIndex = (currentIndex + 1) % filteredCards.length;
       showCard();
-    });
-</script>
+    }
+
+    function markCorrect() {
+      const card = filteredCards[currentIndex];
+      const li = document.createElement("li");
+      li.textContent = `${card.id}. ${card.question}`;
+      correctList.appendChild(li);
+      nextCard();
+    }
+
+    function markIncorrect() {
+      const card = filteredCards[currentIndex];
+      const li = document.createElement("li");
+      li.textContent = `${card.id}. ${card.question}`;
+      incorrectList.appendChild(li);
+      nextCard();
+    }
+
+    function updateProgress() {
+      progressDiv.textContent = `${currentIndex + 1} of ${filteredCards.length}`;
+    }
+
+    function applyFilter() {
+      const selected = subtopicFilter.value;
+      if (selected === "All") {
+        filteredCards = [...allCards];
+      } else {
+        filteredCards = allCards.filter(card => card.subtopic === selected);
+      }
+      if (shuffleEnabled) {
+        filteredCards.sort(() => 0.5 - Math.random());
+      }
+      currentIndex = 0;
+      showCard();
+    }
+
+    function toggleShuffle() {
+      shuffleEnabled = !shuffleEnabled;
+      applyFilter(); // reapply filter and reshuffle
+    }
+
+    // Load data
+    fetch('flashcards.json')
+      .then(response => response.json())
+      .then(data => {
+        allCards = data;
+        populateSubtopicDropdown(data);
+        applyFilter();
+      });
+
+    function populateSubtopicDropdown(data) {
+      const subtopics = [...new Set(data.map(card => card.subtopic))];
+      subtopics.forEach(sub => {
+        const option = document.createElement("option");
+        option.value = sub;
+        option.textContent = sub;
+        subtopicFilter.appendChild(option);
+      });
+    }
+  </script>
 </body>
 </html>
