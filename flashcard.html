@@ -75,7 +75,7 @@
         return;
       }
       const card = filteredCards[currentIndex];
-      document.getElementById("question").textContent = `${card.id}. ${card.question}`;
+      document.getElementById("question").textContent = `${card.question}`;
       document.getElementById("answer").textContent = "";
       updateProgress();
     }
@@ -108,7 +108,7 @@
     function markCorrect() {
       const card = filteredCards[currentIndex];
       const li = document.createElement("li");
-      li.textContent = `${card.id}. ${card.question}`;
+      li.textContent = `${card.question}`;
       correctList.appendChild(li);
       nextCard();
     }
@@ -116,7 +116,7 @@
     function markIncorrect() {
       const card = filteredCards[currentIndex];
       const li = document.createElement("li");
-      li.textContent = `${card.id}. ${card.question}`;
+      li.textContent = `${card.question}`;
       incorrectList.appendChild(li);
       nextCard();
     }
