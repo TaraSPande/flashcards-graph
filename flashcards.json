@@ -1,20 +1,68 @@
 [
   {
     "id": "1",
-    "question": "What is the capital of France?",
-    "answer": "Paris",
-    "links": ["2", "3"]
+    "question": "PK",
+    "answer": "what the body does to the drug",
+    "links": ["3", "4", "5", "6", "7", "8", "9"]
   },
   {
     "id": "2",
-    "question": "Where is the Eiffel Tower located?",
-    "answer": "Paris",
-    "links": ["1"]
+    "question": "PD",
+    "answer": "what the drug does to the body",
+    "links": ["10", "11"]
   },
   {
     "id": "3",
-    "question": "What language do they speak in France?",
-    "answer": "French",
+    "question": "ADME",
+    "answer": "absorption, distribution, metabolism, elimination",
     "links": ["1"]
+  },
+  {
+    "id": "4",
+    "question": "Cmax",
+    "answer": "concentration max",
+    "links": ["1"]
+  },
+  {
+    "id": "5",
+    "question": "Tmax",
+    "answer": "time max",
+    "links": ["1"]
+  },
+  {
+    "id": "6",
+    "question": "AUC",
+    "answer": "Area Under the Curve\nMeasures the area under the ROC curve. A higher AUC value indicates better model performance as it suggests a greater ability to distinguish between classes. An AUC value of 1.0 indicates perfect performance while 0.5 suggests it is random guessing.",
+    "links": ["1"]
+  },
+  {
+    "id": "7",
+    "question": "Clearance",
+    "answer": "drug elimination efficiency",
+    "links": ["1"]
+  },
+  {
+    "id": "8",
+    "question": "Volume of Distribution",
+    "answer": "total amount of drug in the body divided by the concentration in the bloodstream\nhigh Vd suggests the drug is distributed widely throughout the body\nlower Vd indicates the drug is mostly confined to the blood plasma",
+    "links": ["1"]
+  },
+  {
+    "id": "9",
+    "question": "Half Life",
+    "answer": "the time it takes for the drug concentration to decrease to half of its initial amount in the body",
+    "links": ["1"]
+  },
+  {
+    "id": "10",
+    "question": "EC50",
+    "answer": "Efficacy-Concentration 50\ndrug concentration that produces 50% of its maximum effect",
+    "links": ["2"]
+  },
+  {
+    "id": "11",
+    "question": "Potency",
+    "answer": "Higher affinity to target",
+    "links": ["2"]
   }
 ]
