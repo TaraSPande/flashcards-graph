@@ -86,9 +86,25 @@
     }
 
     function nextCard() {
-      if (filteredCards.length === 0) return;
-      currentIndex = (currentIndex + 1) % filteredCards.length;
+      if (currentIndex + 1 >= filteredCards.length) {
+        document.getElementById("question").textContent = "🎉 You've reached the end of the deck!";
+        document.getElementById("answer").textContent = "";
+        // Disable answer/correct/incorrect/next buttons
+        setInteractionEnabled(false);
+        updateProgress();
+        return;
+      }
+    
+      currentIndex++;
       showCard();
+    }
+
+    function setInteractionEnabled(enabled) {
+      document.querySelectorAll(".buttons button").forEach(btn => {
+        if (btn.textContent !== "Show Answer") {
+          btn.disabled = !enabled;
+        }
+      });
     }
 
     function markCorrect() {
@@ -123,6 +139,7 @@
       }
       currentIndex = 0;
       showCard();
+      setInteractionEnabled(true);
     }
 
     function toggleShuffle() {
