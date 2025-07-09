@@ -12,28 +12,30 @@
   <button onclick="showAnswer()">Show Answer</button>
   <button onclick="nextCard()">Next Card</button>
 
-  <script type="module">
-    import flashcards from './flashcards.json' assert { type: 'json' };
+  <script>
+  let currentIndex = 0;
+  let shuffled = [];
+  const cardDiv = document.getElementById("card");
 
-    let currentIndex = 0;
-    let shuffled = flashcards.sort(() => 0.5 - Math.random());
+  function showCard() {
+    cardDiv.textContent = shuffled[currentIndex].question;
+  }
 
-    const cardDiv = document.getElementById("card");
+  function showAnswer() {
+    cardDiv.textContent = shuffled[currentIndex].answer;
+  }
 
-    function showCard() {
-      cardDiv.textContent = shuffled[currentIndex].question;
-    }
-
-    function showAnswer() {
-      cardDiv.textContent = shuffled[currentIndex].answer;
-    }
-
-    function nextCard() {
-      currentIndex = (currentIndex + 1) % shuffled.length;
-      showCard();
-    }
-
+  function nextCard() {
+    currentIndex = (currentIndex + 1) % shuffled.length;
     showCard();
-  </script>
+  }
+
+  fetch('flashcards.json')
+    .then(response => response.json())
+    .then(data => {
+      shuffled = data.sort(() => 0.5 - Math.random());
+      showCard();
+    });
+</script>
 </body>
 </html>
