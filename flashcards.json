@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "question": "What is the capital of France?",
+    "answer": "Paris",
+    "links": ["2", "3"]
+  },
+  {
+    "id": "2",
+    "question": "Where is the Eiffel Tower located?",
+    "answer": "Paris",
+    "links": ["1"]
+  },
+  {
+    "id": "3",
+    "question": "What language do they speak in France?",
+    "answer": "French",
+    "links": ["1"]
+  }
+]

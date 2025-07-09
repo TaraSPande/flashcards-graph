@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flashcard Mode</title>
+  <style>
+    #card { border: 1px solid #ccc; padding: 2rem; text-align: center; width: 50%; margin: auto; }
+    button { margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <div id="card">Loading...</div>
+  <button onclick="showAnswer()">Show Answer</button>
+  <button onclick="nextCard()">Next Card</button>
+
+  <script type="module">
+    import flashcards from './flashcards.json' assert { type: 'json' };
+
+    let currentIndex = 0;
+    let shuffled = flashcards.sort(() => 0.5 - Math.random());
+
+    const cardDiv = document.getElementById("card");
+
+    function showCard() {
+      cardDiv.textContent = shuffled[currentIndex].question;
+    }
+
+    function showAnswer() {
+      cardDiv.textContent = shuffled[currentIndex].answer;
+    }
+
+    function nextCard() {
+      currentIndex = (currentIndex + 1) % shuffled.length;
+      showCard();
+    }
+
+    showCard();
+  </script>
+</body>
+</html>
