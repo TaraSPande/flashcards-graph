@@ -18,7 +18,7 @@ svg {
   overflow-y: auto;
 }
 
-#card { 
+#qa-display { 
     border: 1px solid #ccc; 
     padding: 2rem; 
     width: 50%; 
