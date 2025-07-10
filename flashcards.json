@@ -184,7 +184,7 @@
   {
     "id": "27",
     "question": "IC",
-    "answer": "Information Commons: a physical or virtual space designed to provide integrated access to information resources, technology, and support services, often within an academic library or educational setting. Includes: data, computation, tools, and community.",
+    "answer": "Information Commons: a physical or virtual space designed to provide integrated access to information resources, technology, and support services, often within an academic library or educational setting. Includes: data (via CDW), computation, tools, and community.",
     "links": ["21", "22", "23", "70"],
     "subtopic": "Computing"
   },
