@@ -38,7 +38,7 @@
     "id": "6",
     "question": "CFR",
     "answer": "Code of Federal Regulations. All FDA guidelines and policies are codified in CFR Title 21.",
-    "links": ["8", "17", "31"],
+    "links": ["8", "16", "17", "31"],
     "subtopic": "Drug Development"
   },
   {
@@ -108,7 +108,7 @@
     "id": "16",
     "question": "IND",
     "answer": "Investigational New Drug. Required to begin clinical trials. Submitted after pre-clinical phase.",
-    "links": ["1", "5", "8"],
+    "links": ["1", "5", "6", "8"],
     "subtopic": "Drug Development"
   },
   {
@@ -164,28 +164,28 @@
     "id": "24",
     "question": "PHI",
     "answer": "Protected Health Information: inherently identifiable information that requires an IRB",
-    "links": ["27", "29", "31"],
+    "links": ["29", "31"],
     "subtopic": "Data"
   },
   {
     "id": "25",
     "question": "DeID OMOP",
-    "answer": "Observational Medical Outcomes Partnership: global, open-source community data standard, designed to standardize the structure and content of observational data and to enable efficient analyses that can produce reliable evidence.",
-    "links": ["27", "30"],
+    "answer": "Observational Medical Outcomes Partnership: global, open-source community data standard designed to standardize the structure and content of observational data and to enable efficient analyses that can produce reliable evidence.",
+    "links": ["30"],
     "subtopic": "Data"
   },
   {
     "id": "26",
     "question": "AWS",
     "answer": "Amazon Web Services: cloud-based HPC platform (cloud computing).",
-    "links": ["22", "23", "27"],
+    "links": ["22", "23"],
     "subtopic": "Computing"
   },
   {
     "id": "27",
     "question": "IC",
     "answer": "Information Commons: a physical or virtual space designed to provide integrated access to information resources, technology, and support services, often within an academic library or educational setting. Includes: data, computation, tools, and community.",
-    "links": ["21", "22", "23", "24", "25", "26", "28", "29", "30"],
+    "links": ["21", "22", "23", "28", "29"],
     "subtopic": "Computing"
   },
   {
@@ -205,8 +205,8 @@
   {
     "id": "30",
     "question": "DeID",
-    "answer": "De-identified Information: names, images, birthdays, etc are all altered or removed for anonymity. UCSF Philter (”Filter”) removes identifiable info from clinical notes. There is a service that can pair de-identified and identified tags (if you end up needing identified data later on).",
-    "links": ["25", "27", "29"],
+    "answer": "De-identified Information: names, images, birthdays, etc are all altered or removed for anonymity.",
+    "links": ["25", "29"],
     "subtopic": "Data"
   },
   {
@@ -219,14 +219,14 @@
   {
     "id": "32",
     "question": "AUC",
-    "answer": "Area Under the Curve: measures the area under the ROC curve. A higher AUC value indicates better model performance as it suggests a greater ability to distinguish between classes. An AUC value of 1.0 indicates perfect performance while 0.5 suggests it is random guessing.",
+    "answer": "Area Under the Curve: measures the area under the ROC curve. An AUC value of 1.0 indicates perfect performance while 0.5 suggests it is random guessing.",
     "links": ["13", "33"],
     "subtopic": "Statistics"
   },
   {
     "id": "33",
     "question": "ROC Curve",
-    "answer": "Used to evaluate the performance of a binary classifier by plotting TPR (y) vs. FPR (x) at different classification thresholds (ex. return True if >0.9 vs just >0.5). As we continually lower the threshold, TPR will increase closer to 100% (because FN is decreasing), but FPR will also increases (TN will decrease)! The model is classifying well if TPR is high and FPR is low, particularly for those higher thresholds like >0.9 (farther left points on graph). Example: If we have high FPR at >0.9, then the model is super confident that a negative should be positive -> which is bad. It represents the trade-off between the sensitivity and specificity of a classifier. REMEMBER: TPR and FPR are separate and not dependent on each other!!! (both can and do increase at the same time depending on the threshold). TPR = how many positives guess correctly at X threshold? FPR = how many negatives guessed wrong at X threshold? (X = >0.8 for example).",
+    "answer": "Used to evaluate the performance of a binary classifier by plotting TPR (y) vs. FPR (x) at various classification thresholds (ex. return True if >0.9 vs just >0.5). The model is classifying well if TPR is high and FPR is low in general (at a low enough threshold, TPR and FPR will be 100%). It represents the trade-off between the sensitivity and specificity of a classifier.",
     "links": ["32", "34", "35", "36", "37"],
     "subtopic": "Statistics"
   },
@@ -296,21 +296,21 @@
   {
     "id": "43",
     "question": "Dimensionality Reduction",
-    "answer": "Goal: reduce number of input variables while preserving as much meaningful structure or variance as possible in order to: [1] simplify model, [2] improve performance, [3]reduce overfitting.",
-    "links": ["41", "44", "48", "49", "50"],
+    "answer": "Goal: reduce number of input variables while preserving as much meaningful structure or variance as possible in order to: [1] simplify model, [2] improve performance, [3] reduce overfitting.",
+    "links": ["41", "48", "49", "50"],
     "subtopic": "Statistics"
   },
   {
     "id": "44",
     "question": "Feature Importance",
     "answer": "Transform raw data into meaningful “features” - numerical representations (vectorization).",
-    "links": ["40", "43"],
+    "links": ["40"],
     "subtopic": "Statistics"
   },
   {
     "id": "45",
     "question": "Accuracy",
-    "answer": "TP / [ALL]",
+    "answer": "(TP + TN) / (TP + FP + TN + FN)",
     "links": ["40"],
     "subtopic": "Statistics"
   },
