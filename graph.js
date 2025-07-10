@@ -77,9 +77,7 @@ fetch('flashcards.json')
         selectedNodeId = d.id;
         nodeElements.classed("highlighted", nd => nd.id === d.id);
         document.getElementById("qa-display").innerHTML = `
-          <h3>Question (ID: ${d.id})</h3>
-          <p>${d.question}</p>
-          <h3>Answer</h3>
+          <h3>${d.id}. ${d.question}</h3>
           <p>${d.answer}</p>
         `;
       });
