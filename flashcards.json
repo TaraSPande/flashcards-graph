@@ -50,9 +50,9 @@
   },
   {
     "id": "8",
-    "question": "Drug Development Stages",
+    "question": "Drug Development",
     "answer": "[1] Preclinical (IND). [2] Phase 1 (toxicity). [3] Phase 2 (efficacy). [4] Phase 3 (endpoints). [5] FDA Approval (NDA). [6] Post-Marketing Studies (EHR).",
-    "links": ["4", "6", "16", "17"],
+    "links": ["4", "6", "16", "17", "51", "56"],
     "subtopic": "Drug Development"
   },
   {
@@ -65,8 +65,8 @@
   {
     "id": "10",
     "question": "Potency",
-    "answer": "Higher affinity to target.",
-    "links": ["1", "14"],
+    "answer": "The amount of drug needed to produce a specific effect. It's a measure of the drug's power.",
+    "links": ["1", "14", "51"],
     "subtopic": "Pharmacology"
   },
   {
@@ -228,35 +228,35 @@
     "question": "ROC Curve",
     "answer": "Used to evaluate the performance of a binary classifier by plotting TPR (y) vs. FPR (x) at various classification thresholds (ex. return True if >0.9 vs just >0.5). The model is classifying well if TPR is high and FPR is low in general (at a low enough threshold, TPR and FPR will be 100%). It represents the trade-off between the sensitivity and specificity of a classifier.",
     "links": ["32", "34", "35", "36", "37"],
-    "subtopic": "Statistics"
+    "subtopic": "Metrics"
   },
   {
     "id": "34",
     "question": "TPR",
     "answer": "True Positive Rate: of all actual positives, how many caught? Also known as Sensitivity or Recall.",
     "links": ["33", "36", "38"],
-    "subtopic": "Statistics"
+    "subtopic": "Metrics"
   },
   {
     "id": "35",
     "question": "FPR",
     "answer": "False Positive Rate: of all actual negatives, how many missed? FPR = FP / (FP + TN)",
     "links": ["33"],
-    "subtopic": "Statistics"
+    "subtopic": "Metrics"
   },
   {
     "id": "36",
     "question": "Sensitivity",
     "answer": "Of all actual positives, how many caught? Also known as TPR or Recall.",
     "links": ["33", "34", "38"],
-    "subtopic": "Statistics"
+    "subtopic": "Metrics"
   },
   {
     "id": "37",
     "question": "Specificity",
     "answer": "Of all actual negatives, how many caught? Goal: avoid false positives (like precision, but different strategy). Calculated as 1 - FPR = TN / (TN + FP).",
     "links": ["33"],
-    "subtopic": "Statistics"
+    "subtopic": "Metrics"
   },
   {
     "id": "38",
@@ -318,14 +318,14 @@
     "id": "46",
     "question": "Regression",
     "answer": "Predict continuous numerical value.",
-    "links": ["40"],
+    "links": ["40", "62", "63", "64", "65", "67"],
     "subtopic": "Statistics"
   },
   {
     "id": "47",
     "question": "Classification",
     "answer": "Predict a category or class.",
-    "links": ["32", "38", "39", "40", "45"],
+    "links": ["32", "38", "39", "40", "45", "66", "68"],
     "subtopic": "Statistics"
   },
   {
@@ -347,6 +347,132 @@
     "question": "t-SNE",
     "answer": "Dimensionality Reduction Technique: good for visualizing 2D/3D high-dimensional data.",
     "links": ["43"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "51",
+    "question": "Drug Discovery",
+    "answer": "Goal: give us a lead therapeutic candidate.",
+    "links": ["8", "10", "52", "53", "54", "55", "58", "59", "60", "61"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "52",
+    "question": "Biologics",
+    "answer": "Larger, more complex therapeutics derived from living organisms or their cells and usually administered by injection or infusion.",
+    "links": ["51", "57"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "53",
+    "question": "Small Molecules",
+    "answer": "Typically chemically synthesized, relatively small, and often orally bioavailable.",
+    "links": ["51"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "54",
+    "question": "Agonist",
+    "answer": "Binds to a receptor and activates it, producing a biological response.",
+    "links": ["51"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "55",
+    "question": "Antagonist",
+    "answer": "Binds to a receptor, but does not activate it, instead blocking the receptor and preventing other molecules from binding and activating it.",
+    "links": ["51"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "56",
+    "question": "Humanization",
+    "answer": "The process of modifying laboratory mice so that they more closely resemble humans, primarily in their immune system or other biological systems. This involves introducing human genes, cells, or tissues into the mice, allowing researchers to study human-specific diseases and therapies in a more relevant preclinical model.",
+    "links": ["8"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "57",
+    "question": "Antibodies",
+    "answer": "Made up of two polypeptides (light chains) and a dimer (heavy chains). The variable regions of the heavy and light chains (VH and VL) form the antigen-binding sites, allowing antibodies to specifically recognize and bind to antigens. The constant regions of the heavy chains (CH1, CH2, CH3, and sometimes CH4) determine the antibody's class and interact with effector cells and molecules.",
+    "links": ["52"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "58",
+    "question": "Affinity",
+    "answer": "The strength with which a ligand binds to its receptor (a receptor with high affinity will bind to ligands even when their concentration is low).",
+    "links": ["51"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "59",
+    "question": "Saturation",
+    "answer": "The degree to which receptors are occupied by messengers. There are only so many receptors available to bind messengers – eventually they may all be “in use”!",
+    "links": ["51"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "60",
+    "question": "Specificity (binding)",
+    "answer": "The ability of a ligand to bind to one type of receptor; a messenger will only bind to a cell with the correct receptor.",
+    "links": ["51"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "61",
+    "question": "Competition",
+    "answer": "The ability of different ligands to compete for the same type of receptor. Competitors tend to resemble the natural ligand in structure.",
+    "links": ["51"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "62",
+    "question": "MSE",
+    "answer": "Calculates the average of the squared differences between predicted and actual values. It heavily penalizes larger errors due to the squaring. A lower MSE indicates better model performance.",
+    "links": ["46"],
+    "subtopic": "Metrics"
+  },
+  {
+    "id": "63",
+    "question": "RMSE",
+    "answer": "Is the square root of the MSE. This metric is often preferred over MSE because it is in the same units as the target variable, making it easier to interpret. Like MSE, RMSE also penalizes larger errors.",
+    "links": ["46"],
+    "subtopic": "Metrics"
+  },
+  {
+    "id": "64",
+    "question": "MAE",
+    "answer": "Calculates the average of the absolute differences between predicted and actual values. MAE is less sensitive to outliers than MSE because it doesn't square the errors. It provides a straightforward measure of the average magnitude of errors.",
+    "links": ["46"],
+    "subtopic": "Metrics"
+  },
+  {
+    "id": "65",
+    "question": "R^2",
+    "answer": "Represents the proportion of variance in the dependent variable that is explained by the independent variables in the model. It ranges from 0 to 1, with higher values indicating a better fit. A high R² suggests that the model captures a large portion of the variability in the data.",
+    "links": ["46"],
+    "subtopic": "Metrics"
+  },
+  {
+    "id": "66",
+    "question": "F1",
+    "answer": "Provides a balance between precision and recall. F1 = 2 * (precision * recall) / (precision + recall)",
+    "links": ["47"],
+    "subtopic": "Metrics"
+  },
+  {
+    "id": "67",
+    "question": "Linear Regression",
+    "answer": "Predicts a line of best fit amongst continuous data.",
+    "links": ["46"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "68",
+    "question": "Logistic Regression",
+    "answer": "Predicts the probability of a categorical outcome (often binary).",
+    "links": ["47"],
     "subtopic": "Statistics"
   }
 ]
