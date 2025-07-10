@@ -87,14 +87,14 @@
     "id": "13",
     "question": "PK",
     "answer": "Pharmacokinetics: what the body does to the drug.",
-    "links": ["2", "3", "9", "15", "18", "20", "32"],
+    "links": ["2", "3", "9", "14", "15", "18", "20", "32"],
     "subtopic": "Pharmacology"
   },
   {
     "id": "14",
     "question": "PD",
     "answer": "Pharmacodynamics: what the drug does to the body.",
-    "links": ["1", "10", "12", "19"],
+    "links": ["1", "10", "12", "13", "19"],
     "subtopic": "Pharmacology"
   },
   {
@@ -220,8 +220,8 @@
     "id": "32",
     "question": "AUC",
     "answer": "Area Under the Curve: measures the area under the ROC curve. An AUC value of 1.0 indicates perfect performance while 0.5 suggests it is random guessing.",
-    "links": ["13", "33"],
-    "subtopic": "Statistics"
+    "links": ["13", "33", "47"],
+    "subtopic": "Metrics"
   },
   {
     "id": "33",
@@ -263,14 +263,14 @@
     "question": "Recall",
     "answer": "Of all actual positives, how many caught? Goal: Don’t miss any true cases. High recall = few false negatives. Formula: TP / [TP + FN].",
     "links": ["34", "36", "47"],
-    "subtopic": "Statistics"
+    "subtopic": "Metrics"
   },
   {
     "id": "39",
     "question": "Precision",
     "answer": "Of all positive reports, how many correct? Goal: Don’t make false claims. High precision = few false positives. Formula: TP / [TP + FP].",
     "links": ["47"],
-    "subtopic": "Statistics"
+    "subtopic": "Metrics"
   },
   {
     "id": "40",
@@ -312,7 +312,7 @@
     "question": "Accuracy",
     "answer": "(TP + TN) / (TP + FP + TN + FN)",
     "links": ["47"],
-    "subtopic": "Statistics"
+    "subtopic": "Metrics"
   },
   {
     "id": "46",
@@ -325,7 +325,7 @@
     "id": "47",
     "question": "Classification",
     "answer": "Predict a category or class.",
-    "links": ["38", "39", "40", "45"],
+    "links": ["32", "38", "39", "40", "45"],
     "subtopic": "Statistics"
   },
   {
