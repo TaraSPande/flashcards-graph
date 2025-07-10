@@ -354,7 +354,7 @@
     "question": "Drug Discovery",
     "answer": "Goal: give us a lead therapeutic candidate.",
     "links": ["8", "10", "52", "53", "54", "55", "58", "59", "60", "61"],
-    "subtopic": "Pharmacology"
+    "subtopic": "Drug Development"
   },
   {
     "id": "52",
@@ -389,7 +389,7 @@
     "question": "Humanization",
     "answer": "The process of modifying laboratory mice so that they more closely resemble humans, primarily in their immune system or other biological systems. This involves introducing human genes, cells, or tissues into the mice, allowing researchers to study human-specific diseases and therapies in a more relevant preclinical model.",
     "links": ["8"],
-    "subtopic": "Pharmacology"
+    "subtopic": "Drug Development"
   },
   {
     "id": "57",
