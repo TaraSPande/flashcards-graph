@@ -18,6 +18,13 @@ svg {
   overflow-y: auto;
 }
 
+#card { 
+    border: 1px solid #ccc; 
+    padding: 2rem; 
+    width: 50%; 
+    margin: auto; 
+}
+
 .node {
   cursor: grab;
   stroke-width: 2px;
