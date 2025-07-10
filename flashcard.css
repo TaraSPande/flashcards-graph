@@ -1,0 +1,66 @@
+body { 
+    font-family: Arial, sans-serif; 
+    padding: 2rem; 
+}
+
+#card-container { 
+    text-align: center; 
+    margin-bottom: 2rem; 
+}
+
+#card { 
+    border: 1px solid #ccc; 
+    padding: 2rem; 
+    width: 50%; 
+    margin: auto; 
+}
+
+#question { 
+    font-weight: bold; 
+}
+
+#answer { 
+    margin-top: 1rem; 
+    color: #555; 
+    text-align: left; 
+}
+
+.buttons, .result-columns { 
+    display: flex; 
+    justify-content: center; 
+    gap: 1rem; 
+    flex-wrap: wrap; 
+}
+
+.result-column { 
+    border: 1px solid #ccc; 
+    padding: 1rem; 
+    width: 40%; 
+    min-height: 100px; 
+}
+
+.result-column h3 { 
+    text-align: center; 
+}
+
+#top-bar { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 1rem; 
+}
+
+#progress { 
+    font-weight: bold; 
+}
+
+#controls { 
+    display: flex; 
+    justify-content: center; 
+    gap: 1rem; 
+    margin-bottom: 1rem; 
+}
+
+select, button { 
+    padding: 0.5rem 1rem; 
+}
