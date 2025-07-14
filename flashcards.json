@@ -541,7 +541,12 @@
   {
     "id": "78",
     "question": "Goals of Treatment",
-    "answer": "[1] Prevent, [2] Cure, [3] Manage (slow down decline), [4] Palliate (alleviate symptoms).",
+    "answer": "<ol>
+                <li>Prevent</li>
+                <li>Cure</li>
+                <li>Manage (slow down decline)</li>
+                <li>Palliate (alleviate symptoms)</li>
+              </ol>",
     "links": ["4", "77"],
     "subtopic": "Physiology"
   },
