@@ -95,6 +95,7 @@ fetch('flashcards.json')
       document.getElementById("qa-display").innerHTML = `
         <p>Click on a node to see its question and answer.</p>
       `;
+      document.getElementById("suggestions").innerHTML = "";
     });
 
     simulation.on("tick", () => {
@@ -178,4 +179,43 @@ function searchNode() {
     alert("No matching node found.");
   }
 }
+
+function updateSuggestions() {
+  const term = document.getElementById("node-search").value.toLowerCase();
+  const maxSuggestions = 3;
+  const matches = allNodes.filter(d =>
+    d.id.toLowerCase().includes(term) ||
+    d.question.toLowerCase().includes(term)
+  ).slice(0, maxSuggestions);
+
+  const suggestionsDiv = document.getElementById("suggestions");
+  suggestionsDiv.innerHTML = "";
+
+  if (term && matches.length) {
+    const list = document.createElement("ul");
+    list.style.listStyle = "none";
+    list.style.margin = "0";
+    list.style.padding = "0";
+    list.style.background = "#fff";
+    list.style.border = "1px solid #ccc";
+    list.style.position = "absolute";
+    list.style.zIndex = "10";
+    list.style.width = "100%";
+
+    matches.forEach(match => {
+      const item = document.createElement("li");
+      item.textContent = `[${match.id}] ${match.question}`;
+      item.style.padding = "8px";
+      item.style.cursor = "pointer";
+      item.addEventListener("click", () => {
+        document.getElementById("node-search").value = match.id;
+        suggestionsDiv.innerHTML = "";
+      });
+      list.appendChild(item);
+    });
+
+    suggestionsDiv.appendChild(list);
+  }
+}
+
 
