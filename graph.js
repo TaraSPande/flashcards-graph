@@ -142,3 +142,40 @@ function drag(simulation) {
     .on("drag", dragged)
     .on("end", dragended);
 }
+
+function searchNode() {
+  const term = document.getElementById("node-search").value.toLowerCase();
+  if (!term) return;
+
+  // Find first match by ID or question text
+  const match = allNodes.find(d =>
+    d.id.toLowerCase().includes(term) || d.question.toLowerCase().includes(term)
+  );
+
+  if (match) {
+    // Highlight node
+    selectedNodeId = match.id;
+    nodeElements.classed("highlighted", d => d.id === match.id);
+
+    // Show QA panel
+    document.getElementById("qa-display").innerHTML = `
+      <h3>Question (ID: ${match.id})</h3>
+      <p>${match.question}</p>
+      <h3>Answer</h3>
+      <p>${match.answer}</p>
+    `;
+
+    // Zoom to it smoothly
+    const scale = 1.5;
+    const transform = d3.zoomIdentity
+      .translate(width / 2 - match.x * scale, height / 2 - match.y * scale)
+      .scale(scale);
+
+    svg.transition()
+      .duration(750)
+      .call(zoom.transform, transform);
+  } else {
+    alert("No matching node found.");
+  }
+}
+
