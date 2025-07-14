@@ -24,7 +24,7 @@
     "id": "4",
     "question": "Common Development Endpoints",
     "answer": "[1] Overall survival of patients (traditional endpoint). [2] Progression free survival — time patient lives with disease without it worsening. [3] Durable complete response — complete disappearance of all cancer. [4] Palliation — reduction in tumor symptoms.",
-    "links": ["8"],
+    "links": ["8", "78"],
     "subtopic": "Drug Development"
   },
   {
@@ -488,5 +488,89 @@
     "answer": "Clinical Data Warehouse: provides a single, unified view of patient data, enabling healthcare professionals to access and analyze information from different sources in a standardized format.",
     "links": ["27", "28", "29", "69"],
     "subtopic": "Data"
+  },
+    {
+    "id": "71",
+    "question": "Homeostasis",
+    "answer": "Maintenance of critical physiologic parameters within an optimal range (for survival) via a negative feedback loop.",
+    "links": ["73", "76"],
+    "subtopic": "Physiology"
+  },
+  {
+    "id": "72",
+    "question": "Allostasis",
+    "answer": "When the system is habituated to new normal due to repetitive changes to parameter.",
+    "links": ["76"],
+    "subtopic": "Physiology"
+  },
+  {
+    "id": "73",
+    "question": "Reflex Circuit",
+    "answer": "A neural pathway that mediates a reflex action, which is an involuntary, automatic response to a specific stimulus. Super important in the maintenance of homeostasis: receptor senses parameter -> afferent path -> integrating center (CNS) -> efferent path -> effector alters parameter.",
+    "links": ["71", "74", "75"],
+    "subtopic": "Physiology"
+  },
+  {
+    "id": "74",
+    "question": "Sympathetic",
+    "answer": "Prepares the body for fight or flight responses. Branch of the autonomic nervous system.",
+    "links": ["73"],
+    "subtopic": "Physiology"
+  },
+  {
+    "id": "75",
+    "question": "Parasympathetic",
+    "answer": "Promotes rest and digest functions. Branch of the autonomic nervous system.",
+    "links": ["73"],
+    "subtopic": "Physiology"
+  },
+  {
+    "id": "76",
+    "question": "Physiologic Reserve",
+    "answer": "The body's ability to adapt to stressors and maintain normal function. Naturally, this reserve permanently declines more rapidly with age, until 'symptoms at rest', and eventually 'death'. Acute stress (unless overwhelming) is beneficial and increases physiologic reserve because recovery is allowed. Chronic stress is ALWAYS detrimental because there is no time to repair. We can use this concept to define disease.",
+    "links": ["71", "72", "77", "79", "80", "81", "82"],
+    "subtopic": "Physiology"
+  },
+  {
+    "id": "77",
+    "question": "Mechanisms of Disease",
+    "answer": "[1] Physical and chemical trauma/injury, [2] Vascular: blood delivery/perfusion, [3] Infectious, [4] Inflammatory/autoimmune, [5] Genetic, [6] Metabolic, [7] Neoplastic (cancer), [8] Psychological, [9] Idiopathic/primary/essential (mechanism unknown/multi-factorial).",
+    "links": ["76", "78"],
+    "subtopic": "Physiology"
+  },
+  {
+    "id": "78",
+    "question": "Goals of Treatment",
+    "answer": "[1] Prevent, [2] Cure, [3] Manage (slow down decline), [4] Palliate (alleviate symptoms).",
+    "links": ["4", "77"],
+    "subtopic": "Physiology"
+  },
+  {
+    "id": "79",
+    "question": "Acute Disease",
+    "answer": "Sudden/aburpt depletion of physiologic reserve that (with recovery) will result in full recovery and strengthen physiologic reserve (sharp, temporary). Example: getting the flu.",
+    "links": ["76"],
+    "subtopic": "Physiology"
+  },
+  {
+    "id": "80",
+    "question": "Chronic Disease",
+    "answer": "The permanent, accelerated depletion of physiologic reserve (slope becomes much steeper). In the case of a chronic smoker, their 'slope' can reset if they quit, but it will continue at their current reserve level.",
+    "links": ["76"],
+    "subtopic": "Physiology"
+  },
+  {
+    "id": "81",
+    "question": "Acute-to-chronic Disease",
+    "answer": "An acute disease WITHOUT complete recovery (Ex. pneumonia left untreated will cause chronic respiratory problems).",
+    "links": ["76"],
+    "subtopic": "Physiology"
+  },
+  {
+    "id": "82",
+    "question": "Acute-on-chronic Disease",
+    "answer": "Chronic disease is hit by an acute stress without complete recovery (Ex. getting COVID while having weak lungs).",
+    "links": ["76"],
+    "subtopic": "Physiology"
   }
 ]
