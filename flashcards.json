@@ -23,7 +23,7 @@
   {
     "id": "4",
     "question": "Common Development Endpoints",
-    "answer": "[1] Overall survival of patients (traditional endpoint). [2] Progression free survival — time patient lives with disease without it worsening. [3] Durable complete response — complete disappearance of all cancer. [4] Palliation — reduction in tumor symptoms.",
+    "answer": "<ul><li>Overall survival of patients (traditional endpoint)</li><li>Progression free survival — time patient lives with disease without it worsening</li><li>Durable complete response — complete disappearance of all cancer</li><li>Palliation — reduction in tumor symptoms</li></ul>",
     "links": ["8", "78"],
     "subtopic": "Drug Development"
   },
@@ -51,7 +51,7 @@
   {
     "id": "8",
     "question": "Drug Development",
-    "answer": "[1] Preclinical (IND). [2] Phase 1 (toxicity). [3] Phase 2 (efficacy). [4] Phase 3 (endpoints). [5] FDA Approval (NDA). [6] Post-Marketing Studies (EHR).",
+    "answer": "<ol><li>Preclinical (IND)</li><li>Phase 1 (toxicity)</li><li>Phase 2 (efficacy)</li><li>Phase 3 (endpoints)</li><li>FDA Approval (NDA)</li><li>Post-Marketing Studies (EHR)</li></ol>",
     "links": ["4", "6", "7", "16", "17", "51", "56"],
     "subtopic": "Drug Development"
   },
@@ -534,7 +534,7 @@
   {
     "id": "77",
     "question": "Mechanisms of Disease",
-    "answer": "[1] Physical and chemical trauma/injury, [2] Vascular: blood delivery/perfusion, [3] Infectious, [4] Inflammatory/autoimmune, [5] Genetic, [6] Metabolic, [7] Neoplastic (cancer), [8] Psychological, [9] Idiopathic/primary/essential (mechanism unknown/multi-factorial).",
+    "answer": "<ul><li>Physical and chemical trauma/injury</li><li>Vascular: blood delivery/perfusion</li><li>Infectious</li><li>Inflammatory/autoimmune</li><li>Genetic</li><li>Metabolic</li><li>Neoplastic (cancer)</li><li>Psychological</li><li>Idiopathic/primary/essential (mechanism unknown/multi-factorial)</li></ul>",
     "links": ["76", "78"],
     "subtopic": "Physiology"
   },
