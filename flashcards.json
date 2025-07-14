@@ -23,7 +23,7 @@
   {
     "id": "4",
     "question": "Common Development Endpoints",
-    "answer": "<ul><li>Overall survival of patients (traditional endpoint)</li><li>Progression free survival — time patient lives with disease without it worsening</li><li>Durable complete response — complete disappearance of all cancer</li><li>Palliation — reduction in tumor symptoms</li></ul>",
+    "answer": "<ul><li>Overall survival of patients (traditional endpoint)</li><li>Progression free survival: time patient lives with disease without it worsening</li><li>Durable complete response: complete disappearance of all cancer</li><li>Palliation: reduction in tumor symptoms</li></ul>",
     "links": ["8", "78"],
     "subtopic": "Drug Development"
   },
@@ -296,7 +296,7 @@
   {
     "id": "43",
     "question": "Dimensionality Reduction",
-    "answer": "Goal: reduce number of input variables while preserving as much meaningful structure or variance as possible in order to: [1] simplify model, [2] improve performance, [3] reduce overfitting.",
+    "answer": "Goal: reduce number of input variables while preserving as much meaningful structure or variance as possible in order to: <ul><li>simplify model</li><li>improve performance</li><li>reduce overfitting</li></ul>",
     "links": ["41", "48", "49", "50"],
     "subtopic": "Statistics"
   },
