@@ -16,7 +16,7 @@
   {
     "id": "3",
     "question": "Volume of Distribution (Vd)",
-    "answer": "Total amount of drug in the body divided by the concentration in the bloodstream. High Vd suggests the drug is distributed widely throughout the body. Lower Vd indicates the drug is mostly confined to the blood plasma.",
+    "answer": "Total amount of drug in the body divided by the concentration in the bloodstream. <ul><li>High Vd suggests the drug is distributed widely throughout the body.</li><li>Lower Vd indicates the drug is mostly confined to the blood plasma</li></ul>",
     "links": ["13"],
     "subtopic": "Pharmacology"
   },
@@ -37,14 +37,14 @@
   {
     "id": "6",
     "question": "CFR",
-    "answer": "Code of Federal Regulations. All FDA guidelines and policies are codified in CFR Title 21.",
+    "answer": "Code of Federal Regulations. <ul><li>All FDA guidelines and policies are codified in CFR Title 21</li></ul>",
     "links": ["8", "16", "17", "31"],
     "subtopic": "Drug Development"
   },
   {
     "id": "7",
     "question": "DDI Studies",
-    "answer": "Drug-drug Interaction Studies: what happens taking other drugs w/ this new drug? Context: Post-Marketing Studies.",
+    "answer": "Drug-drug Interaction Studies: what happens taking other drugs w/ this new drug? <ul><li>Context: Post-Marketing Studies</li></ul>",
     "links": ["8", "29"],
     "subtopic": "Pharmacology"
   },
@@ -58,7 +58,7 @@
   {
     "id": "9",
     "question": "ADME",
-    "answer": "Absorption, Distribution, Metabolism, Excretion.",
+    "answer": "<ul><li>Absorption</li><li>Distribution</li><li>Metabolism</li><li>Excretion</li></ul>",
     "links": ["11", "13"],
     "subtopic": "Pharmacology"
   },
@@ -72,14 +72,14 @@
   {
     "id": "11",
     "question": "Preferred Administration Methods",
-    "answer": "Primary: Oral. Secondary: IV.",
+    "answer": "<ol><li>Oral</li><li>IV</li></ol>",
     "links": ["9"],
     "subtopic": "Drug Development"
   },
   {
     "id": "12",
     "question": "Therapeutic Window",
-    "answer": "On a concentration vs time graph, therapeutic window is the concentration between efficacy (low end) and toxicity (high end). Small therapeutic windows require more careful dosing.",
+    "answer": "The concentration between efficacy (low end) and toxicity (high end) on a concentration vs time graph. <ul><li>Small therapeutic windows require more careful dosing</li></ul>",
     "links": ["14"],
     "subtopic": "Pharmacology"
   },
@@ -107,14 +107,14 @@
   {
     "id": "16",
     "question": "IND",
-    "answer": "Investigational New Drug. Required to begin clinical trials. Submitted after pre-clinical phase.",
+    "answer": "Investigational New Drug. <ul><li>Required to begin clinical trials</li><li>Submitted after pre-clinical phase</li></ul>",
     "links": ["1", "5", "6", "8"],
     "subtopic": "Drug Development"
   },
   {
     "id": "17",
     "question": "NDA",
-    "answer": "New Drug Application. Required for FDA approval. Submitted after Phase III.",
+    "answer": "New Drug Application. <ul><li>Required for FDA approval</li><li>Submitted after Phase III</li></ul>",
     "links": ["6", "8"],
     "subtopic": "Drug Development"
   },
@@ -128,7 +128,7 @@
   {
     "id": "19",
     "question": "Emax",
-    "answer": "Maximum Efficacy. Example forms of measurement: reduction in tumor size %",
+    "answer": "Maximum Efficacy. <ul><li>Example forms of measurement: reduction in tumor size %</li></ul>",
     "links": ["14"],
     "subtopic": "Pharmacology"
   },
@@ -163,7 +163,7 @@
   {
     "id": "24",
     "question": "PHI",
-    "answer": "Protected Health Information: inherently identifiable information that requires an IRB",
+    "answer": "Protected Health Information: inherently identifiable information that requires an IRB.",
     "links": ["29", "31"],
     "subtopic": "Data"
   },
@@ -184,21 +184,21 @@
   {
     "id": "27",
     "question": "IC",
-    "answer": "Information Commons: a physical or virtual space designed to provide integrated access to information resources, technology, and support services, often within an academic library or educational setting. Includes: data (via CDW), computation, tools, and community.",
+    "answer": "Information Commons: a physical or virtual space designed to provide integrated access to information resources, technology, and support services, often within an academic library or educational setting. <ul><li>Includes: data (via CDW), computation, tools, and community</li></ul>",
     "links": ["21", "22", "23", "70"],
     "subtopic": "Computing"
   },
   {
     "id": "28",
     "question": "Clinical Concepts",
-    "answer": "Extraction of all concepts in clinical notes into structured “clinical concepts”. Example extractions: dosage, ontologies, etc.",
+    "answer": "Extraction of all concepts in clinical notes into structured “clinical concepts”. <ul><li>Example extractions: dosage, ontologies, etc</li></ul>",
     "links": ["69", "70"],
     "subtopic": "Data"
   },
   {
     "id": "29",
     "question": "EHR",
-    "answer": "Electronic Health Records. Structured data.",
+    "answer": "Electronic Health Records. <ul><li>Structured data</li></ul>",
     "links": ["7", "24", "30", "40", "70"],
     "subtopic": "Data"
   },
@@ -219,77 +219,77 @@
   {
     "id": "32",
     "question": "AUC",
-    "answer": "Area Under the Curve: measures the area under the ROC curve. An AUC value of 1.0 indicates perfect performance while 0.5 suggests it is random guessing.",
+    "answer": "Area Under the Curve: measures the area under the ROC curve. <ul><li>1.0 score indicates perfect performance</li><li>0.5 score is random guessing</li></ul>",
     "links": ["13", "33", "47"],
     "subtopic": "Metrics"
   },
   {
     "id": "33",
     "question": "ROC Curve",
-    "answer": "Used to evaluate the performance of a binary classifier by plotting TPR (y) vs. FPR (x) at various classification thresholds (ex. return True if >0.9 vs just >0.5). The model is classifying well if TPR is high and FPR is low in general (at a low enough threshold, TPR and FPR will be 100%). It represents the trade-off between the sensitivity and specificity of a classifier.",
+    "answer": "Used to evaluate the performance of a binary classifier by plotting TPR (y) vs. FPR (x) at various classification thresholds (ex. return True if >0.9 vs just >0.5). <ul><li>The model is classifying well if TPR is high and FPR is low in general</li><li>At a low enough threshold, TPR and FPR will be 100%</li><li>It represents the trade-off between the sensitivity and specificity of a classifier</li></ul>",
     "links": ["32", "34", "35", "36", "37"],
     "subtopic": "Metrics"
   },
   {
     "id": "34",
     "question": "TPR",
-    "answer": "True Positive Rate: of all actual positives, how many caught? Also known as Sensitivity or Recall.",
+    "answer": "True Positive Rate: of all actual positives, how many caught? <ul><li>Also known as Sensitivity or Recall</li></ul>",
     "links": ["33", "36", "38"],
     "subtopic": "Metrics"
   },
   {
     "id": "35",
     "question": "FPR",
-    "answer": "False Positive Rate: of all actual negatives, how many missed? FPR = FP / (FP + TN)",
+    "answer": "False Positive Rate: of all actual negatives, how many missed? <ul><li>FPR = FP / (FP + TN)</li></ul>",
     "links": ["33"],
     "subtopic": "Metrics"
   },
   {
     "id": "36",
     "question": "Sensitivity",
-    "answer": "Of all actual positives, how many caught? Also known as TPR or Recall.",
+    "answer": "Of all actual positives, how many caught? <ul><li>Also known as TPR or Recall</li></ul>",
     "links": ["33", "34", "38"],
     "subtopic": "Metrics"
   },
   {
     "id": "37",
     "question": "Specificity",
-    "answer": "Of all actual negatives, how many caught? Goal: avoid false positives (like precision, but different strategy). Calculated as 1 - FPR = TN / (TN + FP).",
+    "answer": "Of all actual negatives, how many caught? <ul><li>Goal: avoid false positives (like precision, but different strategy)</li><li>Calculated as 1 - FPR = TN / (TN + FP)</li></ul>",
     "links": ["33"],
     "subtopic": "Metrics"
   },
   {
     "id": "38",
     "question": "Recall",
-    "answer": "Of all actual positives, how many caught? Goal: Don’t miss any true cases. High recall = few false negatives. Formula: TP / [TP + FN].",
+    "answer": "Of all actual positives, how many caught? <ul><li>Goal: Don’t miss any true cases (high recall = few false negatives)</li><li>TP / [TP + FN]</li></ul>",
     "links": ["34", "36", "47"],
     "subtopic": "Metrics"
   },
   {
     "id": "39",
     "question": "Precision",
-    "answer": "Of all positive reports, how many correct? Goal: Don’t make false claims. High precision = few false positives. Formula: TP / [TP + FP].",
+    "answer": "Of all positive reports, how many correct? <ul><li>Goal: Don’t make false claims (high precision = few false positives)</li><li>TP / [TP + FP]</li></ul>",
     "links": ["47"],
     "subtopic": "Metrics"
   },
   {
     "id": "40",
     "question": "Supervised Learning",
-    "answer": "Utilizes labeled data. Give the model a starting point and end point (labeled data) and the algorithm infers the rules.",
+    "answer": "Give the model a starting point and end point (labeled data) and the algorithm infers the rules. <ul><li>Utilizes labeled data</li></ul>",
     "links": ["29", "42", "44", "46", "47"],
     "subtopic": "Statistics"
   },
   {
     "id": "41",
     "question": "Unsupervised Learning",
-    "answer": "Utilizes unlabeled data. Without labels, model finds hidden patterns on its own. During evaluation, you need to have a strong understanding of what you are looking for (since there is no labeled data).",
+    "answer": "Without labels, model finds hidden patterns on its own. During evaluation, you need to have a strong understanding of what you are looking for (since there is no labeled data)<ul><li>Utilizes unlabeled data</li></ul>",
     "links": ["42", "43"],
     "subtopic": "Statistics"
   },
   {
     "id": "42",
     "question": "Semi-supervised Learning",
-    "answer": "Learning from limited labels. Leverage unlabeled data to improve models trained on limited labeled data.",
+    "answer": "Leverage unlabeled data to improve models trained on limited labeled data. <ul><li>Learning from limited labels</li></ul>",
     "links": ["40", "41"],
     "subtopic": "Statistics"
   },
@@ -303,7 +303,7 @@
   {
     "id": "44",
     "question": "Feature Importance",
-    "answer": "Transform raw data into meaningful “features” - numerical representations (vectorization).",
+    "answer": "Transform raw data into meaningful 'features' (numerical representations) via vectorization.",
     "links": ["40"],
     "subtopic": "Statistics"
   },
@@ -387,35 +387,35 @@
   {
     "id": "56",
     "question": "Humanization",
-    "answer": "The process of modifying laboratory mice so that they more closely resemble humans, primarily in their immune system or other biological systems. This involves introducing human genes, cells, or tissues into the mice, allowing researchers to study human-specific diseases and therapies in a more relevant preclinical model.",
+    "answer": "The process of modifying laboratory mice so that they more closely resemble humans, primarily in their immune system or other biological systems. <ul><li>This involves introducing human genes, cells, or tissues into the mice, allowing researchers to study human-specific diseases and therapies in a more relevant preclinical model</li></ul>",
     "links": ["8"],
     "subtopic": "Drug Development"
   },
   {
     "id": "57",
     "question": "Antibodies",
-    "answer": "Made up of two polypeptides (light chains) and a dimer (heavy chains). The variable regions of the heavy and light chains (VH and VL) form the antigen-binding sites, allowing antibodies to specifically recognize and bind to antigens. The constant regions of the heavy chains (CH1, CH2, CH3, and sometimes CH4) determine the antibody's class and interact with effector cells and molecules.",
+    "answer": "Large, Y-shaped proteins used by the immune system to identify and neutralize antigens. <ul><li>Made up of two polypeptides (light chains) and a dimer (heavy chains)</li><li>The variable regions of the heavy and light chains (VH and VL) form the antigen-binding sites, allowing antibodies to specifically recognize and bind to antigens</li><li>The constant regions of the heavy chains (CH1, CH2, CH3, and sometimes CH4) determine the antibody's class and interact with effector cells and molecules</li></ul>",
     "links": ["52"],
     "subtopic": "Pharmacology"
   },
   {
     "id": "58",
     "question": "Affinity",
-    "answer": "The strength with which a ligand binds to its receptor (a receptor with high affinity will bind to ligands even when their concentration is low).",
+    "answer": "The strength with which a ligand binds to its receptor. A receptor with high affinity will bind to ligands even when their concentration is low.",
     "links": ["51"],
     "subtopic": "Pharmacology"
   },
   {
     "id": "59",
     "question": "Saturation",
-    "answer": "The degree to which receptors are occupied by messengers. There are only so many receptors available to bind messengers – eventually they may all be “in use”!",
+    "answer": "The degree to which receptors are occupied by messengers. There are only so many receptors available to bind messengers. Eventually they may all be 'in use'!",
     "links": ["51"],
     "subtopic": "Pharmacology"
   },
   {
     "id": "60",
     "question": "Specificity (binding)",
-    "answer": "The ability of a ligand to bind to one type of receptor; a messenger will only bind to a cell with the correct receptor.",
+    "answer": "The ability of a ligand to bind to one type of receptor. A messenger will only bind to a cell with the correct receptor.",
     "links": ["51"],
     "subtopic": "Pharmacology"
   },
@@ -429,35 +429,35 @@
   {
     "id": "62",
     "question": "MSE",
-    "answer": "Calculates the average of the squared differences between predicted and actual values. It heavily penalizes larger errors due to the squaring. A lower MSE indicates better model performance.",
+    "answer": "Calculates the average of the squared differences between predicted and actual values. <ul><li>It heavily penalizes larger errors due to the squaring</li><li>A lower MSE indicates better model performance</li></ul>",
     "links": ["46"],
     "subtopic": "Metrics"
   },
   {
     "id": "63",
     "question": "RMSE",
-    "answer": "Is the square root of the MSE. This metric is often preferred over MSE because it is in the same units as the target variable, making it easier to interpret. Like MSE, RMSE also penalizes larger errors.",
+    "answer": "The square root of the MSE. <ul><li>This metric is often preferred over MSE because it is in the same units as the target variable, making it easier to interpret.</li><li>Like MSE, RMSE also penalizes larger errors</li></ul>",
     "links": ["46"],
     "subtopic": "Metrics"
   },
   {
     "id": "64",
     "question": "MAE",
-    "answer": "Calculates the average of the absolute differences between predicted and actual values. MAE is less sensitive to outliers than MSE because it doesn't square the errors. It provides a straightforward measure of the average magnitude of errors.",
+    "answer": "Calculates the average of the absolute differences between predicted and actual values. <ul><li>MAE is less sensitive to outliers than MSE because it doesn't square the errors</li><li>It provides a straightforward measure of the average magnitude of errors</li></ul>",
     "links": ["46"],
     "subtopic": "Metrics"
   },
   {
     "id": "65",
     "question": "R^2",
-    "answer": "Represents the proportion of variance in the dependent variable that is explained by the independent variables in the model. It ranges from 0 to 1, with higher values indicating a better fit. A high R² suggests that the model captures a large portion of the variability in the data.",
+    "answer": "Represents the proportion of variance in the dependent variable that is explained by the independent variables in the model. <ul><li>It ranges from 0 to 1, with higher values indicating a better fit</li><li>A high R² suggests that the model captures a large portion of the variability in the data</li></ul>",
     "links": ["46"],
     "subtopic": "Metrics"
   },
   {
     "id": "66",
     "question": "F1",
-    "answer": "Provides a balance between precision and recall. F1 = 2 * (precision * recall) / (precision + recall)",
+    "answer": "Provides a balance between precision and recall. <ul><li>F1 = 2 * (precision * recall) / (precision + recall)</li></ul>",
     "links": ["47"],
     "subtopic": "Metrics"
   },
@@ -506,7 +506,7 @@
   {
     "id": "73",
     "question": "Reflex Circuit",
-    "answer": "A neural pathway that mediates a reflex action, which is an involuntary, automatic response to a specific stimulus. Super important in the maintenance of homeostasis: receptor senses parameter -> afferent path -> integrating center (CNS) -> efferent path -> effector alters parameter.",
+    "answer": "A neural pathway that mediates a reflex action, which is an involuntary, automatic response to a specific stimulus. Super important in the maintenance of homeostasis: <ol><li>receptor senses parameter</li><li>afferent path</li><li>integrating center (CNS)</li><li>efferent path</li><li>effector alters parameter</li></ol>",
     "links": ["71", "74", "75"],
     "subtopic": "Physiology"
   },
@@ -527,7 +527,7 @@
   {
     "id": "76",
     "question": "Physiologic Reserve",
-    "answer": "The body's ability to adapt to stressors and maintain normal function. Naturally, this reserve permanently declines more rapidly with age, until 'symptoms at rest', and eventually 'death'. Acute stress (unless overwhelming) is beneficial and increases physiologic reserve because recovery is allowed. Chronic stress is ALWAYS detrimental because there is no time to repair. We can use this concept to define disease.",
+    "answer": "The body's ability to adapt to stressors and maintain normal function. We can use this concept to define disease. <ul><li>Naturally, this reserve permanently declines more rapidly with age, until 'symptoms at rest', and eventually 'death'</li><li>Acute stress (unless overwhelming) is beneficial and increases physiologic reserve because recovery is allowed</li><li>Chronic stress is ALWAYS detrimental because there is no time to repair</li></ul>",
     "links": ["71", "72", "77", "79", "80", "81", "82"],
     "subtopic": "Physiology"
   },
@@ -548,28 +548,28 @@
   {
     "id": "79",
     "question": "Acute Disease",
-    "answer": "Sudden/aburpt depletion of physiologic reserve that (with recovery) will result in full recovery and strengthen physiologic reserve (sharp, temporary). Example: getting the flu.",
+    "answer": "Sudden/aburpt depletion of physiologic reserve that (with recovery) will result in full recovery and strengthen physiologic reserve (sharp, temporary). <ul><li>Example: getting the flu</li></ul>",
     "links": ["76"],
     "subtopic": "Physiology"
   },
   {
     "id": "80",
     "question": "Chronic Disease",
-    "answer": "The permanent, accelerated depletion of physiologic reserve (slope becomes much steeper). In the case of a chronic smoker, their 'slope' can reset if they quit, but it will continue at their current reserve level.",
+    "answer": "The permanent, accelerated depletion of physiologic reserve (slope becomes much steeper). <ul><li>In the case of a chronic smoker, their 'slope' can reset if they quit, but it will continue at their current reserve level</li></ul>",
     "links": ["76"],
     "subtopic": "Physiology"
   },
   {
     "id": "81",
     "question": "Acute-to-chronic Disease",
-    "answer": "An acute disease WITHOUT complete recovery (Ex. pneumonia left untreated will cause chronic respiratory problems).",
+    "answer": "An acute disease WITHOUT complete recovery. <ul><li>Ex. pneumonia left untreated will cause chronic respiratory problems</li></ul>",
     "links": ["76"],
     "subtopic": "Physiology"
   },
   {
     "id": "82",
     "question": "Acute-on-chronic Disease",
-    "answer": "Chronic disease is hit by an acute stress without complete recovery (Ex. getting COVID while having weak lungs).",
+    "answer": "Chronic disease is hit by an acute stress without complete recovery. <ul><li>Ex. getting COVID while having weak lungs</li></ul>",
     "links": ["76"],
     "subtopic": "Physiology"
   }
