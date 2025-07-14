@@ -45,14 +45,14 @@
     "id": "7",
     "question": "DDI Studies",
     "answer": "Drug-drug Interaction Studies: what happens taking other drugs w/ this new drug? Context: Post-Marketing Studies.",
-    "links": ["29"],
+    "links": ["8", "29"],
     "subtopic": "Pharmacology"
   },
   {
     "id": "8",
     "question": "Drug Development",
     "answer": "[1] Preclinical (IND). [2] Phase 1 (toxicity). [3] Phase 2 (efficacy). [4] Phase 3 (endpoints). [5] FDA Approval (NDA). [6] Post-Marketing Studies (EHR).",
-    "links": ["4", "6", "16", "17", "51", "56"],
+    "links": ["4", "6", "7", "16", "17", "51", "56"],
     "subtopic": "Drug Development"
   },
   {
@@ -199,7 +199,7 @@
     "id": "29",
     "question": "EHR",
     "answer": "Electronic Health Records. Structured data.",
-    "links": ["7", "24", "30", "70"],
+    "links": ["7", "24", "30", "40", "70"],
     "subtopic": "Data"
   },
   {
@@ -276,7 +276,7 @@
     "id": "40",
     "question": "Supervised Learning",
     "answer": "Utilizes labeled data. Give the model a starting point and end point (labeled data) and the algorithm infers the rules.",
-    "links": ["42", "44", "46", "47"],
+    "links": ["29", "42", "44", "46", "47"],
     "subtopic": "Statistics"
   },
   {
