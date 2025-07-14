@@ -208,7 +208,7 @@ function updateSuggestions() {
       item.style.padding = "8px";
       item.style.cursor = "pointer";
       item.addEventListener("click", () => {
-        document.getElementById("node-search").value = match.id;
+        document.getElementById("node-search").value = match.question;
         suggestionsDiv.innerHTML = "";
       });
       list.appendChild(item);
