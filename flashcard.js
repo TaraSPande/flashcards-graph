@@ -25,7 +25,7 @@ function showCard() {
 
 function showAnswer() {
   const card = filteredCards[currentIndex];
-  document.getElementById("answer").textContent = card.answer;
+  document.getElementById("answer").innerHTML = card.answer;
 }
 
 function nextCard() {
