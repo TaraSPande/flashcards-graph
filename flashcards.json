@@ -240,7 +240,7 @@
   {
     "id": "35",
     "question": "FPR",
-    "answer": "False Positive Rate: of all actual negatives, how many missed? <ul><li>FPR = FP / (FP + TN)</li></ul>",
+    "answer": "False Positive Rate: of all actual negatives, how many missed? <ul><li>$FPR = \\frac{FP}{FP + TN}$</li></ul>",
     "links": ["33"],
     "subtopic": "Metrics"
   },
@@ -254,21 +254,21 @@
   {
     "id": "37",
     "question": "Specificity",
-    "answer": "Of all actual negatives, how many caught? <ul><li>Goal: avoid false positives (like precision, but different strategy)</li><li>Calculated as 1 - FPR = TN / (TN + FP)</li></ul>",
+    "answer": "Of all actual negatives, how many caught? <ul><li>Goal: avoid false positives (like precision, but different strategy)</li><li>Calculated as $1 - FPR = \\frac{TN}{TN + FP}$</li></ul>",
     "links": ["33"],
     "subtopic": "Metrics"
   },
   {
     "id": "38",
     "question": "Recall",
-    "answer": "Of all actual positives, how many caught? <ul><li>Goal: Don’t miss any true cases (high recall = few false negatives)</li><li>TP / [TP + FN]</li></ul>",
+    "answer": "Of all actual positives, how many caught? <ul><li>Goal: Don’t miss any true cases (high recall = few false negatives)</li><li>$\\frac{TP}{TP + FN}$</li></ul>",
     "links": ["34", "36", "47"],
     "subtopic": "Metrics"
   },
   {
     "id": "39",
     "question": "Precision",
-    "answer": "Of all positive reports, how many correct? <ul><li>Goal: Don’t make false claims (high precision = few false positives)</li><li>TP / [TP + FP]</li></ul>",
+    "answer": "Of all positive reports, how many correct? <ul><li>Goal: Don’t make false claims (high precision = few false positives)</li><li>$\\frac{TP}{TP + FP}$</li></ul>",
     "links": ["47"],
     "subtopic": "Metrics"
   },
@@ -310,7 +310,7 @@
   {
     "id": "45",
     "question": "Accuracy",
-    "answer": "(TP + TN) / (TP + FP + TN + FN)",
+    "answer": "$\\frac{TP + TN}{TP + FP + TN + FN}$",
     "links": ["47"],
     "subtopic": "Metrics"
   },
@@ -457,7 +457,7 @@
   {
     "id": "66",
     "question": "F1",
-    "answer": "Provides a balance between precision and recall. <ul><li>F1 = 2 * (precision * recall) / (precision + recall)</li></ul>",
+    "answer": "Provides a balance between precision and recall. <ul><li>$F1 = \\frac{2 * \\text{precision} * \\text{recall}}{\\text{precision} + \\text{recall}}$</li></ul>",
     "links": ["47"],
     "subtopic": "Metrics"
   },
