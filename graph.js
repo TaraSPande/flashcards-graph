@@ -80,6 +80,7 @@ fetch('flashcards.json')
           <h3>${d.id}. ${d.question}</h3>
           <p>${d.answer}</p>
         `;
+        MathJax.typesetPromise();
       });
 
     labelElements = container.append("g")
@@ -165,6 +166,7 @@ function searchNode() {
       <h3>Answer</h3>
       <p>${match.answer}</p>
     `;
+    MathJax.typesetPromise();
 
     // Zoom to it smoothly
     const scale = 1.5;
