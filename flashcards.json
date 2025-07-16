@@ -632,7 +632,7 @@
   {
     "id": "91",
     "question": "Fraction Unbound (fᵤ)",
-    "answer": "$f_u = \\frac{C_u}{C} = \\frac{1}{1+K*P} = \\frac{1}{1+K(P_{tot} - DP - XP)}$<ul><li>$K$ is an affinity constant</li></ul>",
+    "answer": "Fraction (between 0 and 1) of drug unbound (floating) to total drug concentration.<ul><li>$f_u = \\frac{C_u}{C} = \\frac{1}{1+K*P} = \\frac{1}{1+K(P_{tot} - DP - XP)}$</li><li>$K$ is an affinity constant</li></ul>",
     "links": ["88", "93"],
     "subtopic": "Pharmacology"
   },
@@ -646,7 +646,7 @@
   {
     "id": "93",
     "question": "Protein Binding",
-    "answer": "$P_{\\text{total}} = P + DP + XP$ <ul><li>$DP$ (drug bound protein) is usually negligible because $P_{\\text{total}}$ is so much larger</li><li>$XP$ (drug bound to competiting proteins) is generally considered 0, assuming no competition</li></ul>",
+    "answer": "Drugs are either floating or bound to a protein.<ul><li>$P_{\\text{total}} = P + DP + XP$</li><li>$DP$ (drug bound protein) is usually negligible because $P_{\\text{total}}$ is so much larger</li><li>$XP$ (drug bound to competiting proteins) is generally considered 0, assuming no competition</li></ul>",
     "links": ["91", "92", "95"],
     "subtopic": "Pharmacology"
   },
