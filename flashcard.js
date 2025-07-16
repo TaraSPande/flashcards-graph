@@ -21,11 +21,13 @@ function showCard() {
   document.getElementById("question").textContent = `${card.question}`;
   document.getElementById("answer").textContent = "";
   updateProgress();
+  MathJax.typesetPromise();
 }
 
 function showAnswer() {
   const card = filteredCards[currentIndex];
   document.getElementById("answer").innerHTML = card.answer;
+  MathJax.typesetPromise();
 }
 
 function nextCard() {
