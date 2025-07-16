@@ -449,7 +449,7 @@
   },
   {
     "id": "65",
-    "question": "$R^2$",
+    "question": "R²",
     "answer": "Represents the proportion of variance in the dependent variable that is explained by the independent variables in the model. <ul><li>It ranges from 0 to 1, with higher values indicating a better fit</li><li>A high $R^2$ suggests that the model captures a large portion of the variability in the data</li></ul>",
     "links": ["46"],
     "subtopic": "Metrics"
