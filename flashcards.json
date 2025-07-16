@@ -9,7 +9,7 @@
   {
     "id": "2",
     "question": "Clearance (CL)",
-    "answer": "Drug elimination efficiency: the efficiency of the body at irreversibly removing the drug from blood plasma.<ul><li>Different types: Renal, Hepatic, Others (often negligible)</li><li>We generally say: $CL = CL_R + CL_H$</li></ul>",
+    "answer": "Drug elimination efficiency: the efficiency of the body at irreversibly removing the drug from blood plasma.<ul><li>Definition: $CL=Q \\frac{C_A-C_V}{C_A} = Q*E$</li><li>Different types: Renal, Hepatic, Others (often negligible)</li><li>We generally say: $CL = CL_R + CL_H$</li></ul>",
     "links": ["13", "84", "87", "88", "94"],
     "subtopic": "Pharmacology"
   },
@@ -611,7 +611,7 @@
   {
     "id": "88",
     "question": "Hepatic Clearance (CLʜ)",
-    "answer": "Metabolic clearance (liver) converting drug into metabolites, essentially removing parent compound from bloodstream.<ul><li>$CL_H = \\frac{Q_B*f_u*CL_I}{Q_B+f_u*CL_I}$</li></ul>",
+    "answer": "Metabolic clearance (liver) converting drug into metabolites, essentially removing parent compound from bloodstream.<ul><li>In a well-stirred model: $CL_H = Q_B*\\frac{f_u*CL_I}{Q_B+f_u*CL_I}$</li></ul>",
     "links": ["2", "89", "90", "91"],
     "subtopic": "Pharmacology"
   },
@@ -625,7 +625,7 @@
   {
     "id": "90",
     "question": "Intrinsic Clearance (CLɪ)",
-    "answer": "Inherint ability of organ (usually referring to liver) to clear the drug without limitations from bloodflow/binding.<ul><li>$CL_H=Q_H \\frac{C_A-C_V}{C_A} = Q_H*E_H$</li><li>High $CL_I \\rightarrow$ High $E_H \\rightarrow CL_H \\approx Q_H$</li><li>Low $CL_I \\rightarrow$ Low $E_H \\rightarrow CL_H \\approx CL_I*f_u$</li></ul>",
+    "answer": "Inherint ability of organ (usually referring to liver) to clear the drug without limitations from bloodflow/binding.<ul><li>High $CL_I \\rightarrow$ High $E_H \\rightarrow CL_H \\approx Q_B$</li><li>Low $CL_I \\rightarrow$ Low $E_H \\rightarrow CL_H \\approx CL_I*f_u$</li></ul>",
     "links": ["86", "88"],
     "subtopic": "Pharmacology"
   },
