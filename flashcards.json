@@ -604,7 +604,7 @@
   {
     "id": "87",
     "question": "Renal Clearance (CLʀ)",
-    "answer": "Excretory clearance (kidney) where the unchanged drug is excreted into urine.<ul><li>$CL_R=\\frac{U*V}{P}$</li><li>$Mechanistically, we can think: CL_R=CL_{\\text{filt}}+CL_{\\text{secretion}}-CL_{\\text{reabsorption}}$</li><li>$CL_{\\text{filt}} = f_u * GFR$</li></ul>",
+    "answer": "Excretory clearance (kidney) where the unchanged drug is excreted into urine.<ul><li>$CL_R=\\frac{U*V}{P}$</li><li>High level: $CL_R=CL_{\\text{filt}}+CL_{\\text{secretion}}-CL_{\\text{reabsorption}}$</li><li>$CL_{\\text{filt}} = f_u * GFR$</li></ul>",
     "links": ["2"],
     "subtopic": "Pharmacology"
   },
@@ -632,7 +632,7 @@
   {
     "id": "91",
     "question": "Fraction Unbound (fᵤ)",
-    "answer": "$f_u = \\frac{C_u}{C} = \\frac{1}{1+K*P} = \\frac{1}{1+K(P_{tot} - DP - XP}$<ul><li>$K$ is an affinity constant</li></ul>",
+    "answer": "$f_u = \\frac{C_u}{C} = \\frac{1}{1+K*P} = \\frac{1}{1+K(P_{tot} - DP - XP)}$<ul><li>$K$ is an affinity constant</li></ul>",
     "links": ["88", "93"],
     "subtopic": "Pharmacology"
   },
