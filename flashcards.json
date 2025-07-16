@@ -578,83 +578,83 @@
     "question": "Hepatic Bioavailability (Fʜ)",
     "answer": "Systemic availability of drug after hepatic first pass metabolism.<ul><li>In general, drugs with high Eʜ have low Fʜ: $F_H = 1 - E_H$</li><li>$\\text{AUC}_{po} = \\frac{F*D}{CL}$</li></ul>",
     "links": ["32", "86"],
-    "subtopic": "XXX"
+    "subtopic": "Pharmacology"
   },
   {
     "id": "84",
     "question": "Dosaging Steady State",
     "answer": "At steady state, rate in = rate out. In other words, infusion rate (dosage rate) = rate of elimination. <ul><li>$R_{in} = CL*C_{ss}$</li></ul>",
     "links": ["2"],
-    "subtopic": "XXX"
+    "subtopic": "Pharmacology"
   },
   {
     "id": "85",
     "question": "C(0)",
     "answer": "Initial Concentration <ul><li>$C(0) = \\frac{\\text{Dose}}{V_d}$</li></ul>",
     "links": ["15"],
-    "subtopic": "XXX"
+    "subtopic": "Pharmacology"
   },
   {
     "id": "86",
     "question": "Extraction Ratio (E)",
     "answer": "Fraction (between 0 and 1) of drug removed by organ in a single pass (assesses organ function). <ul><li>$E=\\frac{C_A-C_V}{C_A} = \\frac{C_{in}-C_{out}}{C_{in}}$</li></ul>",
     "links": ["83", "90"],
-    "subtopic": "XXX"
+    "subtopic": "Pharmacology"
   },
   {
     "id": "87",
     "question": "Renal Clearance (CLʀ)",
     "answer": "Excretory clearance (kidney) where the unchanged drug is excreted into urine.<ul><li>$CL_R=\\frac{U*V}{P}$</li><li>$Mechanistically, we can think: CL_R=CL_{\\text{filt}}+CL_{\\text{secretion}}-CL_{\\text{reabsorption}}$</li><li>$CL_{\\text{filt}} = f_u * GFR$</li></ul>",
     "links": ["2"],
-    "subtopic": "XXX"
+    "subtopic": "Pharmacology"
   },
   {
     "id": "88",
     "question": "Hepatic Clearance (CLʜ)",
     "answer": "Metabolic clearance (liver) converting drug into metabolites, essentially removing parent compound from bloodstream.<ul><li>$CL_H = \\frac{Q_B*f_u*CL_I}{Q_B+f_u*CL_I}$</li></ul>",
     "links": ["2", "89", "90", "91"],
-    "subtopic": "XXX"
+    "subtopic": "Pharmacology"
   },
   {
     "id": "89",
     "question": "Hepatic Blood Flow (Qʙ)",
     "answer": "The circulation of blood through the liver.<ul><li>1500 mL/min for liver</li><li>1200 mL/min for kidney</li></ul>",
     "links": ["88"],
-    "subtopic": "XXX"
+    "subtopic": "Pharmacology"
   },
   {
     "id": "90",
     "question": "Intrinsic Clearance (CLɪ)",
     "answer": "Inherint ability of organ (usually referring to liver) to clear the drug without limitations from bloodflow/binding.<ul><li>$CL_H=Q_H \\frac{C_A-C_V}{C_A} = Q_H*E_H$</li><li>High $CL_I \\rightarrow$ High $E_H \\rightarrow CL_H \\approx Q_H$</li><li>Low $CL_I \\rightarrow$ Low $E_H \\rightarrow CL_H \\approx CL_I*f_u$</li></ul>",
     "links": ["86", "88"],
-    "subtopic": "XXX"
+    "subtopic": "Pharmacology"
   },
   {
     "id": "91",
     "question": "Fraction Unbound (fᵤ)",
     "answer": "$f_u = \\frac{C_u}{C} = \\frac{1}{1+K*P} = \\frac{1}{1+K(P_{tot} - DP - XP}$<ul><li>$K$ is an affinity constant</li></ul>",
     "links": ["88", "93"],
-    "subtopic": "XXX"
+    "subtopic": "Pharmacology"
   },
   {
     "id": "92",
     "question": "Major Plasma Binding Proteins",
     "answer": "<ul><li>Albumin</li><li>$\\alpha_1$-Acid glycoprotein</li><li>Lipoproteins</li><li>Cortisol binding globulin (transcortin)</li><li>Sex-binding globulin</li></ul>",
     "links": ["3", "93"],
-    "subtopic": "XXX"
+    "subtopic": "Pharmacology"
   },
   {
     "id": "93",
     "question": "Protein Binding",
     "answer": "$P_{\\text{total}} = P + DP + XP$ <ul><li>$DP$ (drug bound protein) is usually negligible because $P_{\\text{total}}$ is so much larger</li><li>$XP$ (drug bound to competiting proteins) is generally considered 0, assuming no competition</li></ul>",
     "links": ["91", "92"],
-    "subtopic": "XXX"
+    "subtopic": "Pharmacology"
   },
   {
     "id": "94",
     "question": "Rate of Elimination",
     "answer": "$CL * C$",
     "links": ["2"],
-    "subtopic": "XXX"
+    "subtopic": "Pharmacology"
   }
 ]
