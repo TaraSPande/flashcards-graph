@@ -16,7 +16,7 @@
   {
     "id": "3",
     "question": "Volume of Distribution (Vd)",
-    "answer": "Total amount of drug in the body divided by the concentration in the bloodstream. <ul><li>High Vd suggests the drug is distributed widely throughout the body.</li><li>Lower Vd indicates the drug is mostly confined to the blood plasma</li><li>$V_d = V_P \\frac{f_u * V_T}{f_{ut}}$ (but $V_P$ negligible if $V_d > 40$ L)</li></ul>",
+    "answer": "Total amount of drug in the body divided by the concentration in the bloodstream. <ul><li>High Vd suggests the drug is distributed widely throughout the body.</li><li>Lower Vd indicates the drug is mostly confined to the blood plasma</li><li>$V_d = V_P + \\frac{f_u * V_T}{f_{ut}}$ (but $V_P$ negligible if $V_d > 40$ L)</li></ul>",
     "links": ["13", "92"],
     "subtopic": "Pharmacology"
   },
