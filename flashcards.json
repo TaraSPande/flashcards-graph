@@ -10,7 +10,7 @@
     "id": "2",
     "question": "Clearance (CL)",
     "answer": "Drug elimination efficiency: the efficiency of the body at irreversibly removing the drug from blood plasma.<ul><li>Definition: $CL=Q \\frac{C_A-C_V}{C_A} = Q*E$</li><li>Different types: Renal, Hepatic, Others (often negligible)</li><li>We generally say: $CL = CL_R + CL_H$</li></ul>",
-    "links": ["13", "84", "87", "88", "94"],
+    "links": ["13", "84", "86", "87", "88", "94"],
     "subtopic": "Pharmacology"
   },
   {
@@ -400,7 +400,7 @@
   },
   {
     "id": "58",
-    "question": "Affinity",
+    "question": "Affinity (K)",
     "answer": "The strength with which a ligand binds to its receptor. A receptor with high affinity will bind to ligands even when their concentration is low.",
     "links": ["51"],
     "subtopic": "Pharmacology"
@@ -598,7 +598,7 @@
     "id": "86",
     "question": "Extraction Ratio (E)",
     "answer": "Fraction (between 0 and 1) of drug removed by organ in a single pass (assesses organ function). <ul><li>$E=\\frac{C_A-C_V}{C_A} = \\frac{C_{in}-C_{out}}{C_{in}}$</li></ul>",
-    "links": ["88"],
+    "links": ["2"],
     "subtopic": "Pharmacology"
   },
   {
@@ -611,22 +611,22 @@
   {
     "id": "88",
     "question": "Hepatic Clearance (CLʜ)",
-    "answer": "Metabolic clearance (liver) converting drug into metabolites, essentially removing parent compound from bloodstream.<ul><li>In a 'well-stirred' model: <ul><li>$E_H = \\frac{f_u*CL_I}{Q_B+f_u*CL_I}$</li><li>$CL_H = Q_B*\\frac{f_u*CL_I}{Q_B+f_u*CL_I}$</li></ul></li><li>High $E_H$ $\\rightarrow CL_H \\approx Q_B$</li><li>Low $E_H$ $\\rightarrow CL_H \\approx f_u*CL_I$</li></ul>",
-    "links": ["2", "83", "86", "89", "90", "91"],
+    "answer": "Metabolic clearance (liver) converting drug into metabolites, essentially removing parent compound from bloodstream.<ul><li>In a 'well-stirred' liver model: <ul><li>$E_H = \\frac{f_u*CL_I}{Q_B+f_u*CL_I}$</li><li>$CL_H = Q_B*\\frac{f_u*CL_I}{Q_B+f_u*CL_I}$</li></ul></li><li>High $E_H$ $\\rightarrow CL_H \\approx Q_B$</li><li>Low $E_H$ $\\rightarrow CL_H \\approx f_u*CL_I$</li></ul>",
+    "links": ["2", "83", "89", "90", "91"],
     "subtopic": "Pharmacology"
   },
   {
     "id": "89",
     "question": "Hepatic Blood Flow (Qʙ)",
     "answer": "The circulation of blood through the liver.<ul><li>1500 mL/min for liver</li><li>1200 mL/min for kidney</li></ul>",
-    "links": ["88"],
+    "links": ["88", "96"],
     "subtopic": "Pharmacology"
   },
   {
     "id": "90",
     "question": "Intrinsic Clearance (CLɪ)",
-    "answer": "Inherint ability of organ (usually referring to liver) to clear the drug without limitations from bloodflow/binding.",
-    "links": ["88"],
+    "answer": "Inherint ability of organ (usually referring to liver) to clear the drug without limitations from bloodflow/binding.<ul><li>High $CL_I \\rightarrow$ High $E_H$</li><li>Low $CL_I \\rightarrow$ Low $E_H$</li></ul>",
+    "links": ["88", "97"],
     "subtopic": "Pharmacology"
   },
   {
@@ -647,7 +647,7 @@
     "id": "93",
     "question": "Protein Binding",
     "answer": "$P_{\\text{total}} = P + DP + XP$ <ul><li>$DP$ (drug bound protein) is usually negligible because $P_{\\text{total}}$ is so much larger</li><li>$XP$ (drug bound to competiting proteins) is generally considered 0, assuming no competition</li></ul>",
-    "links": ["91", "92"],
+    "links": ["91", "92", "95"],
     "subtopic": "Pharmacology"
   },
   {
@@ -655,6 +655,27 @@
     "question": "Rate of Elimination",
     "answer": "$CL * C$",
     "links": ["2"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "95",
+    "question": "Factors that affect Plasma Protein (fᵤ) + Tissue Binding (fᵤₜ)",
+    "answer": "<ul><li>Displacing Agents (e.g. concomitant drugs)</li><li>Changes in binding protein concentration ($P_{tot}$)</li><li>Changes in drug binding affinity (K)</li><li>Changes in tissue binding protein concentration ($T_{tot}$)</li></ul>",
+    "links": ["93"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "96",
+    "question": "Factors that affect Qʙ",
+    "answer": "<ul><li>Reduces:<ul><li>Heart Failure</li><li>Live Disease</li><li>Co-administration of beta-adrenergic blocking agents</li><li>Exercise</li></ul></li><li>Increases:<ul><li>Food</li></ul></li></ul>",
+    "links": ["89"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "97",
+    "question": "Factors that affect CLɪ",
+    "answer": "<ul><li>Reduces:<ul><li>Enzyme or Influx Transporter Inhibitors</li><li>Liver Disease</li><li>Bile Transporter Inhibitors</li></ul></li><li>Increases:<ul><li>Enzyme or Influx Transporter Inducers</li></ul></li></ul>",
+    "links": ["90"],
     "subtopic": "Pharmacology"
   }
 ]
