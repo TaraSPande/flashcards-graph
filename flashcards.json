@@ -276,21 +276,21 @@
     "id": "40",
     "question": "Supervised Learning",
     "answer": "Give the model a starting point and end point (labeled data) and the algorithm infers the rules. <ul><li>Utilizes labeled data</li></ul>",
-    "links": ["29", "42", "44", "46", "47"],
+    "links": ["29", "42", "44", "46", "47", "98"],
     "subtopic": "Statistics"
   },
   {
     "id": "41",
     "question": "Unsupervised Learning",
     "answer": "Without labels, model finds hidden patterns on its own. During evaluation, you need to have a strong understanding of what you are looking for (since there is no labeled data)<ul><li>Utilizes unlabeled data</li></ul>",
-    "links": ["42", "43"],
+    "links": ["42", "43", "98", "99"],
     "subtopic": "Statistics"
   },
   {
     "id": "42",
     "question": "Semi-supervised Learning",
     "answer": "Leverage unlabeled data to improve models trained on limited labeled data. <ul><li>Learning from limited labels</li></ul>",
-    "links": ["40", "41"],
+    "links": ["40", "41", "98"],
     "subtopic": "Statistics"
   },
   {
@@ -677,5 +677,96 @@
     "answer": "<ul><li>Reduces:<ul><li>Enzyme or Influx Transporter Inhibitors</li><li>Liver Disease</li><li>Bile Transporter Inhibitors</li></ul></li><li>Increases:<ul><li>Enzyme or Influx Transporter Inducers</li></ul></li></ul>",
     "links": ["90"],
     "subtopic": "Pharmacology"
+  },
+  {
+    "id": "98",
+    "question": "Machine Learning",
+    "answer": "XXX",
+    "links": ["40", "41", "42", "101"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "99",
+    "question": "Clustering",
+    "answer": "XXX",
+    "links": ["41", "100"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "100",
+    "question": "K-means",
+    "answer": "XXX",
+    "links": ["99"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "101",
+    "question": "Deep Learning",
+    "answer": "XXX",
+    "links": ["98", "102", "103", "104", "105", "106"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "102",
+    "question": "MLP",
+    "answer": "XXX",
+    "links": ["101"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "103",
+    "question": "CNN",
+    "answer": "XXX",
+    "links": ["101"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "104",
+    "question": "RNN",
+    "answer": "XXX",
+    "links": ["101"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "105",
+    "question": "Transformers",
+    "answer": "XXX",
+    "links": ["101", "107"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "106",
+    "question": "Autoencoders",
+    "answer": "XXX",
+    "links": ["101", "110"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "107",
+    "question": "LLMs",
+    "answer": "XXX",
+    "links": ["105", "108", "109"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "108",
+    "question": "GPT",
+    "answer": "XXX",
+    "links": ["107"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "109",
+    "question": "BERT",
+    "answer": "XXX",
+    "links": ["107"],
+    "subtopic": "Statistics"
+  },
+  {
+    "id": "110",
+    "question": "VAEs",
+    "answer": "XXX",
+    "links": ["106"],
+    "subtopic": "Statistics"
   }
 ]
