@@ -25,7 +25,7 @@
     "question": "Common Development Endpoints",
     "answer": "<ul><li>Overall survival of patients (traditional endpoint)</li><li>Progression free survival: time patient lives with disease without it worsening</li><li>Durable complete response: complete disappearance of all cancer</li><li>Palliation: reduction in tumor symptoms</li></ul>",
     "links": ["8", "78"],
-    "subtopic": "Drug Development"
+    "subtopic": "Regulation"
   },
   {
     "id": "5",
@@ -39,21 +39,21 @@
     "question": "CFR",
     "answer": "Code of Federal Regulations. <ul><li>All FDA guidelines and policies are codified in CFR Title 21</li></ul>",
     "links": ["8", "16", "17", "31"],
-    "subtopic": "Drug Development"
+    "subtopic": "Regulation"
   },
   {
     "id": "7",
     "question": "DDI Studies",
     "answer": "Drug-drug Interaction Studies: what happens taking other drugs w/ this new drug? <ul><li>Context: Post-Marketing Studies</li></ul>",
     "links": ["8", "29"],
-    "subtopic": "Pharmacology"
+    "subtopic": "Regulation"
   },
   {
     "id": "8",
     "question": "Drug Development",
     "answer": "<ol><li>Preclinical (IND)</li><li>Phase 1 (toxicity)</li><li>Phase 2 (efficacy)</li><li>Phase 3 (endpoints)</li><li>FDA Approval (NDA)</li><li>Post-Marketing Studies (EHR)</li></ol>",
     "links": ["4", "6", "7", "16", "17", "51", "56"],
-    "subtopic": "Drug Development"
+    "subtopic": "Regulation"
   },
   {
     "id": "9",
@@ -74,7 +74,7 @@
     "question": "Preferred Administration Methods",
     "answer": "<ol><li>Oral</li><li>IV</li></ol>",
     "links": ["9"],
-    "subtopic": "Drug Development"
+    "subtopic": "Regulation"
   },
   {
     "id": "12",
@@ -109,14 +109,14 @@
     "question": "IND",
     "answer": "Investigational New Drug. <ul><li>Required to begin clinical trials</li><li>Submitted after pre-clinical phase</li></ul>",
     "links": ["1", "5", "6", "8"],
-    "subtopic": "Drug Development"
+    "subtopic": "Regulation"
   },
   {
     "id": "17",
     "question": "NDA",
     "answer": "New Drug Application. <ul><li>Required for FDA approval</li><li>Submitted after Phase III</li></ul>",
     "links": ["6", "8"],
-    "subtopic": "Drug Development"
+    "subtopic": "Regulation"
   },
   {
     "id": "18",
@@ -144,77 +144,77 @@
     "question": "VM",
     "answer": "Virtual Machine: a technology that can be used to create isolated computing environments, which can be beneficial for some HPC tasks.",
     "links": ["27"],
-    "subtopic": "Computing"
+    "subtopic": "Infrastructure"
   },
   {
     "id": "22",
     "question": "HPC",
     "answer": "High Performance Computing: focused on achieving high performance through parallel processing, often using specialized in-house hardware and infrastructure.",
     "links": ["26", "27"],
-    "subtopic": "Computing"
+    "subtopic": "Infrastructure"
   },
   {
     "id": "23",
     "question": "Cloud Computing",
     "answer": "The practice of using a network of remote servers hosted on the internet to store, manage, and process data, rather than a local server or a personal computer.",
     "links": ["26", "27"],
-    "subtopic": "Computing"
+    "subtopic": "Infrastructure"
   },
   {
     "id": "24",
     "question": "PHI",
     "answer": "Protected Health Information: inherently identifiable information that requires an IRB.",
     "links": ["29", "31"],
-    "subtopic": "Data"
+    "subtopic": "Infrastructure"
   },
   {
     "id": "25",
     "question": "DeID OMOP",
     "answer": "Observational Medical Outcomes Partnership: global, open-source community data standard designed to standardize the structure and content of observational data and to enable efficient analyses that can produce reliable evidence.",
     "links": ["30"],
-    "subtopic": "Data"
+    "subtopic": "Infrastructure"
   },
   {
     "id": "26",
     "question": "AWS",
     "answer": "Amazon Web Services: cloud-based HPC platform (cloud computing).",
     "links": ["22", "23"],
-    "subtopic": "Computing"
+    "subtopic": "Infrastructure"
   },
   {
     "id": "27",
     "question": "IC",
     "answer": "Information Commons: a physical or virtual space designed to provide integrated access to information resources, technology, and support services, often within an academic library or educational setting. <ul><li>Includes: data (via CDW), computation, tools, and community</li></ul>",
     "links": ["21", "22", "23", "70"],
-    "subtopic": "Computing"
+    "subtopic": "Infrastructure"
   },
   {
     "id": "28",
     "question": "Clinical Concepts",
     "answer": "Extraction of all concepts in clinical notes into structured “clinical concepts”. <ul><li>Example extractions: dosage, ontologies, etc</li></ul>",
     "links": ["69", "70"],
-    "subtopic": "Data"
+    "subtopic": "Infrastructure"
   },
   {
     "id": "29",
     "question": "EHR",
     "answer": "Electronic Health Records. <ul><li>Structured data</li></ul>",
     "links": ["7", "24", "30", "40", "70"],
-    "subtopic": "Data"
+    "subtopic": "Infrastructure"
   },
   {
     "id": "30",
     "question": "DeID",
     "answer": "De-identified Information: names, images, birthdays, etc are all altered or removed for anonymity.",
     "links": ["25", "29"],
-    "subtopic": "Data"
+    "subtopic": "Infrastructure"
   },
   {
     "id": "31",
     "question": "IRB",
     "answer": "Institutional Review Board: a committee that reviews and approves research involving human subjects to ensure ethical and safe practices.",
     "links": ["6", "24"],
-    "subtopic": "Drug Development"
+    "subtopic": "Regulation"
   },
   {
     "id": "32",
@@ -277,35 +277,35 @@
     "question": "Supervised Learning",
     "answer": "Give the model a starting point and end point (labeled data) and the algorithm infers the rules. <ul><li>Utilizes labeled data</li></ul>",
     "links": ["29", "42", "44", "46", "47", "98"],
-    "subtopic": "Statistics"
+    "subtopic": "Algorithms"
   },
   {
     "id": "41",
     "question": "Unsupervised Learning",
     "answer": "Without labels, model finds hidden patterns on its own. During evaluation, you need to have a strong understanding of what you are looking for (since there is no labeled data)<ul><li>Utilizes unlabeled data</li></ul>",
     "links": ["42", "43", "98", "99"],
-    "subtopic": "Statistics"
+    "subtopic": "Algorithms"
   },
   {
     "id": "42",
     "question": "Semi-supervised Learning",
     "answer": "Leverage unlabeled data to improve models trained on limited labeled data. <ul><li>Learning from limited labels</li></ul>",
     "links": ["40", "41", "98"],
-    "subtopic": "Statistics"
+    "subtopic": "Algorithms"
   },
   {
     "id": "43",
     "question": "Dimensionality Reduction",
     "answer": "Goal: reduce number of input variables while preserving as much meaningful structure or variance as possible in order to: <ul><li>simplify model</li><li>improve performance</li><li>reduce overfitting</li></ul>",
     "links": ["41", "48", "49", "50"],
-    "subtopic": "Statistics"
+    "subtopic": "Algorithms"
   },
   {
     "id": "44",
     "question": "Feature Importance",
     "answer": "Transform raw data into meaningful 'features' (numerical representations) via vectorization.",
     "links": ["40"],
-    "subtopic": "Statistics"
+    "subtopic": "Metrics"
   },
   {
     "id": "45",
@@ -319,42 +319,42 @@
     "question": "Regression",
     "answer": "Predict continuous numerical value.",
     "links": ["40", "62", "63", "64", "65", "67"],
-    "subtopic": "Statistics"
+    "subtopic": "Algorithms"
   },
   {
     "id": "47",
     "question": "Classification",
     "answer": "Predict a category or class.",
     "links": ["32", "38", "39", "40", "45", "66", "68"],
-    "subtopic": "Statistics"
+    "subtopic": "Algorithms"
   },
   {
     "id": "48",
     "question": "PCA",
     "answer": "Dimensionality Reduction Technique: linear, fast, interpretable.",
     "links": ["43"],
-    "subtopic": "Statistics"
+    "subtopic": "Algorithms"
   },
   {
     "id": "49",
     "question": "UMAP",
     "answer": "Dimensionality Reduction Technique: nonlinear, preserves local and global structure. Great for visualization.",
     "links": ["43"],
-    "subtopic": "Statistics"
+    "subtopic": "Algorithms"
   },
   {
     "id": "50",
     "question": "t-SNE",
     "answer": "Dimensionality Reduction Technique: good for visualizing 2D/3D high-dimensional data.",
     "links": ["43"],
-    "subtopic": "Statistics"
+    "subtopic": "Algorithms"
   },
   {
     "id": "51",
     "question": "Drug Discovery",
     "answer": "Goal: give us a lead therapeutic candidate.",
     "links": ["8", "10", "52", "53", "54", "55", "58", "59", "60", "61"],
-    "subtopic": "Drug Development"
+    "subtopic": "Regulation"
   },
   {
     "id": "52",
@@ -389,7 +389,7 @@
     "question": "Humanization",
     "answer": "The process of modifying laboratory mice so that they more closely resemble humans, primarily in their immune system or other biological systems. <ul><li>This involves introducing human genes, cells, or tissues into the mice, allowing researchers to study human-specific diseases and therapies in a more relevant preclinical model</li></ul>",
     "links": ["8"],
-    "subtopic": "Drug Development"
+    "subtopic": "Regulation"
   },
   {
     "id": "57",
@@ -466,28 +466,28 @@
     "question": "Linear Regression",
     "answer": "Predicts a line of best fit amongst continuous data.",
     "links": ["46"],
-    "subtopic": "Statistics"
+    "subtopic": "Algorithms"
   },
   {
     "id": "68",
     "question": "Logistic Regression",
     "answer": "Predicts the probability of a categorical outcome (often binary).",
     "links": ["47"],
-    "subtopic": "Statistics"
+    "subtopic": "Algorithms"
   },
   {
     "id": "69",
     "question": "Clinical Notes",
     "answer": "Unstructured data written by healthcare professionals to document a patient's medical or psychological assessment, diagnosis, treatment, and progress.",
     "links": ["28", "70"],
-    "subtopic": "Data"
+    "subtopic": "Infrastructure"
   },
   {
     "id": "70",
     "question": "CDW",
     "answer": "Clinical Data Warehouse: provides a single, unified view of patient data, enabling healthcare professionals to access and analyze information from different sources in a standardized format.",
     "links": ["27", "28", "29", "69"],
-    "subtopic": "Data"
+    "subtopic": "Infrastructure"
   },
     {
     "id": "71",
@@ -680,93 +680,100 @@
   },
   {
     "id": "98",
-    "question": "Machine Learning",
+    "question": "Machine Learning (ML)",
     "answer": "XXX",
-    "links": ["40", "41", "42", "101"],
-    "subtopic": "Statistics"
+    "links": ["40", "41", "42", "101", "111"],
+    "subtopic": "Algorithms"
   },
   {
     "id": "99",
     "question": "Clustering",
     "answer": "XXX",
     "links": ["41", "100"],
-    "subtopic": "Statistics"
+    "subtopic": "Algorithms"
   },
   {
     "id": "100",
     "question": "K-means",
     "answer": "XXX",
     "links": ["99"],
-    "subtopic": "Statistics"
+    "subtopic": "Algorithms"
   },
   {
     "id": "101",
-    "question": "Deep Learning",
+    "question": "Deep Learning (DL)",
     "answer": "XXX",
     "links": ["98", "102", "103", "104", "105", "106"],
-    "subtopic": "Statistics"
+    "subtopic": "Algorithms"
   },
   {
     "id": "102",
     "question": "MLP",
     "answer": "XXX",
     "links": ["101"],
-    "subtopic": "Statistics"
+    "subtopic": "Algorithms"
   },
   {
     "id": "103",
     "question": "CNN",
     "answer": "XXX",
     "links": ["101"],
-    "subtopic": "Statistics"
+    "subtopic": "Algorithms"
   },
   {
     "id": "104",
     "question": "RNN",
     "answer": "XXX",
     "links": ["101"],
-    "subtopic": "Statistics"
+    "subtopic": "Algorithms"
   },
   {
     "id": "105",
     "question": "Transformers",
     "answer": "XXX",
     "links": ["101", "107"],
-    "subtopic": "Statistics"
+    "subtopic": "Algorithms"
   },
   {
     "id": "106",
     "question": "Autoencoders",
     "answer": "XXX",
     "links": ["101", "110"],
-    "subtopic": "Statistics"
+    "subtopic": "Algorithms"
   },
   {
     "id": "107",
     "question": "LLMs",
     "answer": "XXX",
     "links": ["105", "108", "109"],
-    "subtopic": "Statistics"
+    "subtopic": "Algorithms"
   },
   {
     "id": "108",
     "question": "GPT",
     "answer": "XXX",
     "links": ["107"],
-    "subtopic": "Statistics"
+    "subtopic": "Algorithms"
   },
   {
     "id": "109",
     "question": "BERT",
     "answer": "XXX",
     "links": ["107"],
-    "subtopic": "Statistics"
+    "subtopic": "Algorithms"
   },
   {
     "id": "110",
     "question": "VAEs",
     "answer": "XXX",
     "links": ["106"],
-    "subtopic": "Statistics"
+    "subtopic": "Algorithms"
+  },
+  {
+    "id": "111",
+    "question": "Artificial Intelligence (AI)",
+    "answer": "XXX",
+    "links": ["98"],
+    "subtopic": "Algorithms"
   }
 ]
