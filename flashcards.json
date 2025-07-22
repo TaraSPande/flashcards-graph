@@ -703,7 +703,7 @@
     "id": "101",
     "question": "Deep Learning (DL)",
     "answer": "XXX",
-    "links": ["98", "102", "103", "104", "105", "106"],
+    "links": ["98", "102", "103", "104", "105", "106", "114", "115"],
     "subtopic": "Algorithms"
   },
   {
@@ -717,14 +717,14 @@
     "id": "103",
     "question": "CNN",
     "answer": "XXX",
-    "links": ["101"],
+    "links": ["101", "113"],
     "subtopic": "Algorithms"
   },
   {
     "id": "104",
     "question": "RNN",
     "answer": "XXX",
-    "links": ["101"],
+    "links": ["101", "112"],
     "subtopic": "Algorithms"
   },
   {
@@ -774,6 +774,83 @@
     "question": "Artificial Intelligence (AI)",
     "answer": "XXX",
     "links": ["98"],
+    "subtopic": "Algorithms"
+  },
+  {
+    "id": "112",
+    "question": "LSTM",
+    "answer": "XXX",
+    "links": ["104"],
+    "subtopic": "Algorithms"
+  },
+  {
+    "id": "113",
+    "question": "Downsampling",
+    "answer": "XXX",
+    "links": ["103", "116"],
+    "subtopic": "Algorithms"
+  },
+  {
+    "id": "114",
+    "question": "Activation Functions",
+    "answer": "XXX",
+    "links": ["101", "117", "118", "119"],
+    "subtopic": "Algorithms"
+  },
+  {
+    "id": "115",
+    "question": "Regularization",
+    "answer": "XXX",
+    "links": ["101", "120", "121", "122"],
+    "subtopic": "Algorithms"
+  },
+  {
+    "id": "116",
+    "question": "Max Pooling",
+    "answer": "XXX",
+    "links": ["113"],
+    "subtopic": "Algorithms"
+  },
+  {
+    "id": "117",
+    "question": "ReLU",
+    "answer": "XXX",
+    "links": ["114"],
+    "subtopic": "Algorithms"
+  },
+  {
+    "id": "118",
+    "question": "Sigmoid",
+    "answer": "XXX",
+    "links": ["114"],
+    "subtopic": "Algorithms"
+  },
+  {
+    "id": "119",
+    "question": "Hyperbolic Tangent (tanh)",
+    "answer": "XXX",
+    "links": ["114"],
+    "subtopic": "Algorithms"
+  },
+  {
+    "id": "120",
+    "question": "L1 (Lasso)",
+    "answer": "XXX",
+    "links": ["115"],
+    "subtopic": "Algorithms"
+  },
+  {
+    "id": "121",
+    "question": "L2 (Ridge)",
+    "answer": "XXX",
+    "links": ["115"],
+    "subtopic": "Algorithms"
+  },
+  {
+    "id": "122",
+    "question": "Dropout",
+    "answer": "XXX",
+    "links": ["115"],
     "subtopic": "Algorithms"
   }
 ]
