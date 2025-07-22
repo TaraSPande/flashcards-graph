@@ -24,7 +24,7 @@
     "id": "4",
     "question": "Common Development Endpoints",
     "answer": "<ul><li>Overall survival of patients (traditional endpoint)</li><li>Progression free survival: time patient lives with disease without it worsening</li><li>Durable complete response: complete disappearance of all cancer</li><li>Palliation: reduction in tumor symptoms</li></ul>",
-    "links": ["8", "78"],
+    "links": ["8", "78", "124"],
     "subtopic": "Regulation"
   },
   {
@@ -80,7 +80,7 @@
     "id": "12",
     "question": "Therapeutic Window",
     "answer": "The concentration between efficacy (low end) and toxicity (high end) on a concentration vs time graph. <ul><li>Small therapeutic windows require more careful dosing</li></ul>",
-    "links": ["14"],
+    "links": ["14", "125"],
     "subtopic": "Pharmacology"
   },
   {
@@ -101,7 +101,7 @@
     "id": "15",
     "question": "Cmax",
     "answer": "Maximum concentration.",
-    "links": ["13", "85"],
+    "links": ["13", "123"],
     "subtopic": "Pharmacology"
   },
   {
@@ -591,7 +591,7 @@
     "id": "85",
     "question": "C(0)",
     "answer": "Initial Concentration <ul><li>$C(0) = \\frac{\\text{Dose}}{V_d}$</li></ul>",
-    "links": ["15"],
+    "links": ["123"],
     "subtopic": "Pharmacology"
   },
   {
@@ -852,5 +852,40 @@
     "answer": "XXX",
     "links": ["115"],
     "subtopic": "Algorithms"
+  },
+  {
+    "id": "123",
+    "question": "Concentration Response",
+    "answer": "XXX",
+    "links": ["15", "85"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "124",
+    "question": "Drug Response",
+    "answer": "XXX",
+    "links": ["4", "126", "127"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "125",
+    "question": "Therapeutic Index",
+    "answer": "XXX",
+    "links": ["12"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "126",
+    "question": "Hysteresis",
+    "answer": "XXX",
+    "links": ["124"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "127",
+    "question": "Proteresis",
+    "answer": "XXX",
+    "links": ["124"],
+    "subtopic": "Pharmacology"
   }
 ]
