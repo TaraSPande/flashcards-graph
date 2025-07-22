@@ -353,7 +353,7 @@
     "id": "51",
     "question": "Drug Discovery",
     "answer": "Goal: give us a lead therapeutic candidate.",
-    "links": ["8", "10", "52", "53", "54", "55", "58", "59", "60", "61"],
+    "links": ["8", "10", "52", "53", "54", "55", "58", "59", "60", "61", "129", "132"],
     "subtopic": "Regulation"
   },
   {
@@ -681,28 +681,28 @@
   {
     "id": "98",
     "question": "Machine Learning (ML)",
-    "answer": "XXX",
+    "answer": "A subset of AI where systems learn patterns from data rather than being explicitly programmed.",
     "links": ["40", "41", "42", "101", "111"],
     "subtopic": "Algorithms"
   },
   {
     "id": "99",
     "question": "Clustering",
-    "answer": "XXX",
+    "answer": "Groups data points into clusters based on similarity, without prior knowledge of cluster labels.",
     "links": ["41", "100"],
     "subtopic": "Algorithms"
   },
   {
     "id": "100",
     "question": "K-means",
-    "answer": "XXX",
+    "answer": "Aims to partition a dataset into k groups (clusters) where each data point belongs to the cluster with the nearest mean (centroid). It's a simple and fast algorithm, especially useful for large datasets.",
     "links": ["99"],
     "subtopic": "Algorithms"
   },
   {
     "id": "101",
     "question": "Deep Learning (DL)",
-    "answer": "XXX",
+    "answer": "A subset of ML that uses neural networks with many layers to model complex patterns.",
     "links": ["98", "102", "103", "104", "105", "106", "114", "115"],
     "subtopic": "Algorithms"
   },
@@ -730,7 +730,7 @@
   {
     "id": "105",
     "question": "Transformers",
-    "answer": "XXX",
+    "answer": "Excels at handling sequential data like text by using a mechanism called attention to weigh the importance of different parts of the input WHILE processing it. This allows transformers to understand context and relationships within the data more effectively.",
     "links": ["101", "107"],
     "subtopic": "Algorithms"
   },
@@ -744,21 +744,21 @@
   {
     "id": "107",
     "question": "LLMs",
-    "answer": "XXX",
+    "answer": "One use case of the Transformer architecture, specifically for language tasks and at large scale.",
     "links": ["105", "108", "109"],
     "subtopic": "Algorithms"
   },
   {
     "id": "108",
     "question": "GPT",
-    "answer": "XXX",
+    "answer": "Decoder-only transformer language model.",
     "links": ["107"],
     "subtopic": "Algorithms"
   },
   {
     "id": "109",
     "question": "BERT",
-    "answer": "XXX",
+    "answer": "Encoder-only transformer language model.",
     "links": ["107"],
     "subtopic": "Algorithms"
   },
@@ -772,7 +772,7 @@
   {
     "id": "111",
     "question": "Artificial Intelligence (AI)",
-    "answer": "XXX",
+    "answer": "Machines performing tasks that typically require human intelligence (e.g., reasoning, problem-solving, understanding language).<ul><li>Rule-based systems, expert systems, game-playing AIs like AlphaGo</li></ul>",
     "links": ["98"],
     "subtopic": "Algorithms"
   },
@@ -786,106 +786,148 @@
   {
     "id": "113",
     "question": "Downsampling",
-    "answer": "XXX",
+    "answer": "A process that reduces the spatial dimensions (width and height) of the input data, often implemented using pooling layers.",
     "links": ["103", "116"],
     "subtopic": "Algorithms"
   },
   {
     "id": "114",
     "question": "Activation Functions",
-    "answer": "XXX",
+    "answer": "Activation functions introduce non-linearity into neural networks, allowing them to learn complex patterns, and shape the output of individual neurons. They often scale the output to a specific range (e.g., 0 to 1, or -1 to 1).",
     "links": ["101", "117", "118", "119"],
     "subtopic": "Algorithms"
   },
   {
     "id": "115",
     "question": "Regularization",
-    "answer": "XXX",
+    "answer": "Regularization techniques add a penalty term to the loss function, discouraging overly complex models that might overfit the training data.",
     "links": ["101", "120", "121", "122"],
     "subtopic": "Algorithms"
   },
   {
     "id": "116",
     "question": "Max Pooling",
-    "answer": "XXX",
+    "answer": "Divide the input into rectangular pooling regions and, for each region, select the maximum value from the input features within that region. This process simplifies the representation, reduces computational cost, and helps with feature selection and generalization.",
     "links": ["113"],
     "subtopic": "Algorithms"
   },
   {
     "id": "117",
     "question": "ReLU",
-    "answer": "XXX",
+    "answer": "$f(x) = \\text{max}(0, x)$<ul><li>Strengths: simple and computationally efficient, mitigates vanishing gradients</li><li>Weaknessess: dying ReLU problem (neurons constantly zero which prevents learning), not zero-centered output (between 0 and infinity)</li></ul>",
     "links": ["114"],
     "subtopic": "Algorithms"
   },
   {
     "id": "118",
     "question": "Sigmoid",
-    "answer": "XXX",
+    "answer": "$f(x) = \\frac{1}{1 + \\text{exp}(-x)}$<ul><li>Strengths: probability interpretation, smooth, nice derivative</li><li>Weaknessess: vanishing gradients, not zero-centered output (between 0 to 1), can't parallelize with GPUs well</li></ul>",
     "links": ["114"],
     "subtopic": "Algorithms"
   },
   {
     "id": "119",
     "question": "Hyperbolic Tangent (tanh)",
-    "answer": "XXX",
+    "answer": "$f(x) = \\frac{\\text{exp}(x) - \\text{exp}(-x)}{\\text{exp}(x) + \\text{exp}(-x)}$<ul><li>Strengths: zero-centered output (-1 to 1)</li><li>Weaknessess: vanishing gradients, computationally expensive</li></ul>",
     "links": ["114"],
     "subtopic": "Algorithms"
   },
   {
     "id": "120",
     "question": "L1 (Lasso)",
-    "answer": "XXX",
+    "answer": "<ul><li>Encourages sparsity by driving some weights to zero, effectively performing feature selection</li><li>Penalty higher for smaller values (between -1 and 1)</li></ul>",
     "links": ["115"],
     "subtopic": "Algorithms"
   },
   {
     "id": "121",
     "question": "L2 (Ridge)",
-    "answer": "XXX",
+    "answer": "<ul><li>Promotes evenly small weights by shrinking them, but generally doesn’t zero them out</li><li>Penalty higher for big values</li></ul>",
     "links": ["115"],
     "subtopic": "Algorithms"
   },
   {
     "id": "122",
     "question": "Dropout",
-    "answer": "XXX",
+    "answer": "<ul><li>Randomly dropping neurons at certain rate by placing a zero mask over weights, effectively training many subnetworks and preventing co-adaptation (overfit)</li><li>Dropout is just for training</li></ul>",
     "links": ["115"],
     "subtopic": "Algorithms"
   },
   {
     "id": "123",
     "question": "Concentration Response",
-    "answer": "XXX",
+    "answer": "The relationship between drug concentration and the resulting effect. Concentration can cause varied response between patients and within individual patients over time. Appropriate concentration depends on the desired outcome:<ul><li>Need moment-to-moment concentration (immediate)?</li><li>Need certain maximum threshold? (ex. max to kill infection)</li><li>Need average concentrations? (slower)</li></ul>",
     "links": ["15", "85"],
     "subtopic": "Pharmacology"
   },
   {
     "id": "124",
     "question": "Drug Response",
-    "answer": "XXX",
+    "answer": "Evaluated by assessing how the drug impacts the measurable characteristics of a disease or condition:<ul><li>Clinical Endpoint: subjective or objective characteristic that reflects how patient feels, functions, or survives (measuring the direct essence of the disease)</li><li>Surrogate Endpoint: Biomarker that has been validated to be clinically useful/indicative to act as a substitute for a clinical endpoint when its technically not feasible to measure directly</li><li>Biomarker: any characterisitic that can be objectively measured/evaluated as an indicator of normal processes (not a substitute for a clinical endpoint because there is no validation for its relevance to the given disease)</li></ul>",
     "links": ["4", "126", "127"],
     "subtopic": "Pharmacology"
   },
   {
     "id": "125",
     "question": "Therapeutic Index",
-    "answer": "XXX",
-    "links": ["12"],
+    "answer": "<ul><li>Clinical definition: the ratio of drug concentration in blood/plasma at which toxicity is first seen (MTC) to concentration needed for minimum therapeutic effect (MEC) -> $TI = \\frac{MTC}{MEC}$</li><li>Non-clinical definition (usually for animals): $\\frac{LD_{50}}{ED_{50}}$</li><li>TI < 2-3 is considered narrow and requires close monitoring (expensive)</li><li>TI > 10 has a good safety profile (ex. in case patient double doses, they will still be ok)</li></ul>",
+    "links": ["12", "128"],
     "subtopic": "Pharmacology"
   },
   {
     "id": "126",
     "question": "Hysteresis",
-    "answer": "XXX",
+    "answer": "The observed drug effect lags behind the given drug concentration over time. Plotting effect (y) vs concentration (x) yields a counter-clockwise loop.<ul><li>Need to wait for drug effect</li><li>Need for loading dose (single intital dose that is larger than chronic dose</li><li>Less drug needed with continued usage</li><li>Causes: delay of drug distribution, formation of active metabolite, slow dissociation, transduction, indirect response</li></ul>",
     "links": ["124"],
     "subtopic": "Pharmacology"
   },
   {
     "id": "127",
     "question": "Proteresis",
-    "answer": "XXX",
+    "answer": "The observed drug effect, counterintuitively, decreases as drug concentration increases over time. Plotting effect (y) vs concentration (x) yields a clockwise loop.<ul><li>More drug being needed with continued usage</li><li>Possible need for holidays from drug use (sometimes not possible if body has too high tolerance)</li><li>Causes: high tolerance, receptors not given enough time to recover (need to increase dosing interval)</li></ul>",
     "links": ["124"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "128",
+    "question": "ED50",
+    "answer": "Median effective dose: dosage of the drug needed to cure 50% of animals.",
+    "links": ["125"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "129",
+    "question": "Drug Permeability",
+    "answer": "Considerations: hydrophobicity, charge, pH, size",
+    "links": ["51", "130"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "130",
+    "question": "Drug Partitioning",
+    "answer": "$\\log(K_{part}) = \\log(P) = \\log_{10}(\\frac{M_{oct}}{M_{water}})$<ul><li>You need your drug to be slightly hydrophobic ($\\log(P) \\approx 1.3-1.8$)</li><li>0 to 3 is a salvagable range to be in (too hydrophilic (<) won't permeate membrane and too hydrophobic (>) will get stuck in fatty tissue)</li></ul>",
+    "links": ["129", "131"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "131",
+    "question": "Acid-Base Equillibrium",
+    "answer": "XXX",
+    "links": ["130"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "132",
+    "question": "Measurement of Disease",
+    "answer": "Measure of Disease = Baseline + Drug Response + Placebo Response + Disease Progression<ul><li>Baseline<ul><li>Measure of disease/condition pre-treatment ($E_0$)</li></ul></li><li>Drug Response<ul><li>The component of effect due only to drug</li><li>$\\frac{E_{max}*Cn}{EC_{50}^n+Cn}$</li></ul></li><li>Placebo Response<ul><li>Any therapeutic that has an effect on a patient, but objectively doesn't treat it”.</li></ul></li><li>Disease Progression<ul><li>Natural course of (chronic) disease without any treatment</li></ul></li></ul>",
+    "links": ["51", "133"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "133",
+    "question": "Hill's Coefficient",
+    "answer": "A measure of cooperativity in ligand-receptor binding or enzyme-substrate interactions (concentration-response steepness factor).<ul><li>$\\frac{\\log(81)}{\\log(\\frac{C90}{C10})}$</li></ul>",
+    "links": ["132"],
     "subtopic": "Pharmacology"
   }
 ]
