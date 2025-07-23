@@ -1,12 +1,5 @@
 [
   {
-    "id": "1",
-    "question": "EC50",
-    "answer": "Efficacy-Concentration 50: drug concentration that produces 50% of its maximum effect.",
-    "links": ["10", "14", "16"],
-    "subtopic": "Pharmacology"
-  },
-  {
     "id": "2",
     "question": "Clearance (CL)",
     "answer": "Drug elimination efficiency: the efficiency of the body at irreversibly removing the drug from blood plasma.<ul><li>Definition: $CL=Q \\frac{C_A-C_V}{C_A} = Q*E$</li><li>Different types: Renal, Hepatic, Others (often negligible)</li><li>We generally say: $CL = CL_R + CL_H$</li></ul>",
@@ -64,9 +57,9 @@
   },
   {
     "id": "10",
-    "question": "Potency",
-    "answer": "The amount of drug needed to produce a specific effect. It's a measure of the drug's power.",
-    "links": ["1", "14", "51"],
+    "question": "Potency (EC50)",
+    "answer": "The amount of drug needed to produce a specific effect. It's a measure of the drug's power.<ul><li>Measured with Efficacy-Concentration 50 (EC50 or C50): drug concentration that produces 50% of its maximum effect</li></ul>",
+    "links": ["14", "16", "132"],
     "subtopic": "Pharmacology"
   },
   {
@@ -94,7 +87,7 @@
     "id": "14",
     "question": "PD",
     "answer": "Pharmacodynamics: what the drug does to the body.",
-    "links": ["1", "10", "12", "13", "19"],
+    "links": ["10", "12", "13", "19"],
     "subtopic": "Pharmacology"
   },
   {
@@ -108,7 +101,7 @@
     "id": "16",
     "question": "IND",
     "answer": "Investigational New Drug. <ul><li>Required to begin clinical trials</li><li>Submitted after pre-clinical phase</li></ul>",
-    "links": ["1", "5", "6", "8"],
+    "links": ["5", "6", "8", "10"],
     "subtopic": "Regulation"
   },
   {
@@ -127,9 +120,9 @@
   },
   {
     "id": "19",
-    "question": "Emax",
-    "answer": "Maximum Efficacy. <ul><li>Example forms of measurement: reduction in tumor size %</li></ul>",
-    "links": ["14"],
+    "question": "Efficacy (Emax)",
+    "answer": "The maximum response or effect a drug can produce, regardless of the dosage, represented by Emax.<ul><li>More specifically, E(0) is the baseline measurement and Emax is the maximum drug effect over baseline.</li><li>Example forms of measurement: reduction in tumor size %</li></ul>",
+    "links": ["14", "132"],
     "subtopic": "Pharmacology"
   },
   {
@@ -283,14 +276,14 @@
     "id": "41",
     "question": "Unsupervised Learning",
     "answer": "Without labels, model finds hidden patterns on its own. During evaluation, you need to have a strong understanding of what you are looking for (since there is no labeled data)<ul><li>Utilizes unlabeled data</li></ul>",
-    "links": ["42", "43", "98", "99"],
+    "links": ["43", "98", "99"],
     "subtopic": "Algorithms"
   },
   {
     "id": "42",
     "question": "Semi-supervised Learning",
     "answer": "Leverage unlabeled data to improve models trained on limited labeled data. <ul><li>Learning from limited labels</li></ul>",
-    "links": ["40", "41", "98"],
+    "links": ["40"],
     "subtopic": "Algorithms"
   },
   {
@@ -353,7 +346,7 @@
     "id": "51",
     "question": "Drug Discovery",
     "answer": "Goal: give us a lead therapeutic candidate.",
-    "links": ["8", "10", "52", "53", "54", "55", "58", "59", "60", "61", "129", "132"],
+    "links": ["8", "52", "53", "54", "55", "58", "59", "60", "61", "129"],
     "subtopic": "Regulation"
   },
   {
@@ -682,7 +675,7 @@
     "id": "98",
     "question": "Machine Learning (ML)",
     "answer": "A subset of AI where systems learn patterns from data rather than being explicitly programmed.",
-    "links": ["40", "41", "42", "101", "111"],
+    "links": ["40", "41", "101", "111"],
     "subtopic": "Algorithms"
   },
   {
@@ -920,7 +913,7 @@
     "id": "132",
     "question": "Measurement of Disease",
     "answer": "Measure of Disease = Baseline + Drug Response + Placebo Response + Disease Progression<ul><li>Baseline<ul><li>Measure of disease/condition pre-treatment ($E_0$)</li></ul></li><li>Drug Response<ul><li>The component of effect due only to drug</li><li>$\\frac{E_{max}*Cn}{EC_{50}^n+Cn}$</li></ul></li><li>Placebo Response<ul><li>Any therapeutic that has an effect on a patient, but objectively doesn't treat it”.</li></ul></li><li>Disease Progression<ul><li>Natural course of (chronic) disease without any treatment</li></ul></li></ul>",
-    "links": ["51", "133"],
+    "links": ["10", "19", "133"],
     "subtopic": "Pharmacology"
   },
   {
