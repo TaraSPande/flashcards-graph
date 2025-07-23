@@ -31,7 +31,7 @@
     "id": "6",
     "question": "CFR",
     "answer": "Code of Federal Regulations. <ul><li>All FDA guidelines and policies are codified in CFR Title 21</li></ul>",
-    "links": ["8", "16", "17", "31"],
+    "links": ["8", "31"],
     "subtopic": "Regulation"
   },
   {
@@ -101,14 +101,14 @@
     "id": "16",
     "question": "IND",
     "answer": "Investigational New Drug. <ul><li>Required to begin clinical trials</li><li>Submitted after pre-clinical phase</li></ul>",
-    "links": ["5", "6", "8", "10"],
+    "links": ["5", "8", "10"],
     "subtopic": "Regulation"
   },
   {
     "id": "17",
     "question": "NDA",
     "answer": "New Drug Application. <ul><li>Required for FDA approval</li><li>Submitted after Phase III</li></ul>",
-    "links": ["6", "8"],
+    "links": ["8"],
     "subtopic": "Regulation"
   },
   {
@@ -346,7 +346,7 @@
     "id": "51",
     "question": "Drug Discovery",
     "answer": "Goal: give us a lead therapeutic candidate.",
-    "links": ["8", "52", "53", "54", "55", "58", "59", "60", "61", "129"],
+    "links": ["8", "52", "53", "54", "55", "129"],
     "subtopic": "Regulation"
   },
   {
@@ -367,14 +367,14 @@
     "id": "54",
     "question": "Agonist",
     "answer": "Binds to a receptor and activates it, producing a biological response.",
-    "links": ["51"],
+    "links": ["51", "58", "59", "60"],
     "subtopic": "Pharmacology"
   },
   {
     "id": "55",
     "question": "Antagonist",
     "answer": "Binds to a receptor, but does not activate it, instead blocking the receptor and preventing other molecules from binding and activating it.",
-    "links": ["51"],
+    "links": ["51", "61"],
     "subtopic": "Pharmacology"
   },
   {
@@ -395,28 +395,28 @@
     "id": "58",
     "question": "Affinity (K)",
     "answer": "The strength with which a ligand binds to its receptor. A receptor with high affinity will bind to ligands even when their concentration is low.",
-    "links": ["51"],
+    "links": ["54"],
     "subtopic": "Pharmacology"
   },
   {
     "id": "59",
     "question": "Saturation",
     "answer": "The degree to which receptors are occupied by messengers. There are only so many receptors available to bind messengers. Eventually they may all be 'in use'!",
-    "links": ["51"],
+    "links": ["54"],
     "subtopic": "Pharmacology"
   },
   {
     "id": "60",
     "question": "Specificity (binding)",
     "answer": "The ability of a ligand to bind to one type of receptor. A messenger will only bind to a cell with the correct receptor.",
-    "links": ["51"],
+    "links": ["54"],
     "subtopic": "Pharmacology"
   },
   {
     "id": "61",
     "question": "Competition",
     "answer": "The ability of different ligands to compete for the same type of receptor. Competitors tend to resemble the natural ligand in structure.",
-    "links": ["51"],
+    "links": ["55"],
     "subtopic": "Pharmacology"
   },
   {
