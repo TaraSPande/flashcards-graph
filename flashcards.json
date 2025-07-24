@@ -66,7 +66,7 @@
     "id": "11",
     "question": "Preferred Administration Methods",
     "answer": "<ol><li>Oral</li><li>IV</li></ol>",
-    "links": ["9"],
+    "links": ["9", "16"],
     "subtopic": "Regulation"
   },
   {
@@ -101,7 +101,7 @@
     "id": "16",
     "question": "IND",
     "answer": "Investigational New Drug. <ul><li>Required to begin clinical trials</li><li>Submitted after pre-clinical phase</li></ul>",
-    "links": ["5", "8", "10"],
+    "links": ["5", "8", "10", "11"],
     "subtopic": "Regulation"
   },
   {
