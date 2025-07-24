@@ -157,7 +157,7 @@
     "id": "24",
     "question": "PHI",
     "answer": "Protected Health Information: inherently identifiable information that requires an IRB.",
-    "links": ["29", "31"],
+    "links": ["31", "70"],
     "subtopic": "Infrastructure"
   },
   {
@@ -192,14 +192,14 @@
     "id": "29",
     "question": "EHR",
     "answer": "Electronic Health Records. <ul><li>Structured data</li></ul>",
-    "links": ["24", "30", "40", "70"],
+    "links": ["70", "134"],
     "subtopic": "Infrastructure"
   },
   {
     "id": "30",
     "question": "DeID",
     "answer": "De-identified Information: names, images, birthdays, etc are all altered or removed for anonymity.",
-    "links": ["25", "29"],
+    "links": ["25", "70"],
     "subtopic": "Infrastructure"
   },
   {
@@ -269,7 +269,7 @@
     "id": "40",
     "question": "Supervised Learning",
     "answer": "Give the model a starting point and end point (labeled data) and the algorithm infers the rules. <ul><li>Utilizes labeled data</li></ul>",
-    "links": ["29", "42", "44", "46", "47", "98"],
+    "links": ["42", "44", "46", "47", "98", "135"],
     "subtopic": "Algorithms"
   },
   {
@@ -479,7 +479,7 @@
     "id": "70",
     "question": "CDW",
     "answer": "Clinical Data Warehouse: provides a single, unified view of patient data, enabling healthcare professionals to access and analyze information from different sources in a standardized format.",
-    "links": ["27", "28", "29", "69"],
+    "links": ["24", "27", "28", "29", "30", "69"],
     "subtopic": "Infrastructure"
   },
     {
@@ -921,6 +921,27 @@
     "question": "Hill's Coefficient",
     "answer": "A measure of cooperativity in ligand-receptor binding or enzyme-substrate interactions (concentration-response steepness factor).<ul><li>$\\frac{\\log(81)}{\\log(\\frac{C90}{C10})}$</li></ul>",
     "links": ["132"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "134",
+    "question": "Retrospective Studies",
+    "answer": "XXX",
+    "links": ["29", "135", "136"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "135",
+    "question": "Propensity Score",
+    "answer": "XXX",
+    "links": ["40", "134"],
+    "subtopic": "Pharmacology"
+  },
+  {
+    "id": "136",
+    "question": "Cohort Design",
+    "answer": "XXX",
+    "links": ["134"],
     "subtopic": "Pharmacology"
   }
 ]
