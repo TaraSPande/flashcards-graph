@@ -45,7 +45,7 @@
     "id": "8",
     "question": "Drug Development",
     "answer": "<ol><li>Preclinical (IND)</li><li>Phase 1 (toxicity)</li><li>Phase 2 (efficacy)</li><li>Phase 3 (endpoints)</li><li>FDA Approval (NDA)</li><li>Post-Marketing Studies (EHR)</li></ol>",
-    "links": ["4", "6", "7", "16", "17", "51", "56"],
+    "links": ["4", "6", "7", "16", "17", "51", "56", "134"],
     "subtopic": "Regulation"
   },
   {
@@ -927,21 +927,21 @@
     "id": "134",
     "question": "Retrospective Studies",
     "answer": "XXX",
-    "links": ["29", "135", "136"],
-    "subtopic": "Pharmacology"
+    "links": ["8", "29", "135", "136"],
+    "subtopic": "Regulation"
   },
   {
     "id": "135",
     "question": "Propensity Score",
     "answer": "XXX",
     "links": ["40", "134"],
-    "subtopic": "Pharmacology"
+    "subtopic": "Algorithms"
   },
   {
     "id": "136",
     "question": "Cohort Design",
     "answer": "XXX",
     "links": ["134"],
-    "subtopic": "Pharmacology"
+    "subtopic": "Infrastructure"
   }
 ]
